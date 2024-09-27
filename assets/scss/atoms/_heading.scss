@@ -1,0 +1,12 @@
+.lr-heading {
+   font-size: 28px;
+   color: #2772C7;
+   padding: 20px 0;
+   text-align: center;
+   &.blackclr {
+      color: #000;
+   }
+   &.whiteclr {
+      color: #fff;
+   }
+}
