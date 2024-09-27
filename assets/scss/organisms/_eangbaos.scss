@@ -1,8 +1,8 @@
 .lr-eangbaos {
     width: 100%;
-    height: 900px;
+    height: 800px;
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     padding: 50px 0px;
 
     &__title {
@@ -34,25 +34,8 @@
         background-size: cover;
         background-position: center;
         position: relative;
+        padding-top: 70px;
     }
-
-
-    // &__steps {
-    //     width: 50%;
-
-    //     p {
-    //         color: #fff;
-    //         padding-bottom: 20px;
-    //     }
-
-    //     h5 {
-    //         color: #fff;
-    //     }
-
-    //     span {
-    //         line-height: 40px;
-    //     }
-    // }
 
     &__right {
         width: 50%;
@@ -85,6 +68,16 @@
         }
     }
 
+    &__slide-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 30%;
+            margin: 0 auto;
+        }
+    }
+
     &__stptxt {
         padding-left: 16px;
         padding-bottom: 24px;
@@ -107,29 +100,10 @@
         align-items: baseline;
         gap: 20px;
     }
+}
 
-    // &__num {
-    //     color: #fff;
-    //     background-color: #4478fe;
-    //     width: 30px;
-    //     height: 30px;
-    //     text-align: center;
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    //     border-radius: 50%;
-    //     position: relative;
-
-
-    //     &::after {
-    //         content: "";
-    //         position: absolute;
-    //         width: 1px;
-    //         height: 100%;
-    //         border-bottom: 1px solid #fff;
-    //         border-style: dotted;
-    //         border-width: 2px;
-    //         top: 30px;
-    //     }
-    // }
+@include mobile {
+    .lr-eangbaos {
+        display: none;
+    }
 }
