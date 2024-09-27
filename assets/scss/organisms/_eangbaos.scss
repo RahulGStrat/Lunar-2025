@@ -23,6 +23,10 @@
         }
     }
 
+    &__bg {
+        width: 50%;
+    }
+
     &__wrap {
         display: flex;
         gap: 20px;
@@ -51,7 +55,13 @@
             width: 2px;
             height: 100%;
             border-left: 1px dashed #fff;
-            left: 2.3%;
+            left: 4%;
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
         }
     }
 
