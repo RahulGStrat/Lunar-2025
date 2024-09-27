@@ -1,11 +1,9 @@
-// @font-face {
-//   font-family: "MyWebFont";
-//   src: url("pathofyourfont.woff2") format("woff2"),
-//     url("pathofyourfont.woff") format("woff");
-//   font-style: normal;
-//   font-weight: normal;
-//   font-display: swap;
-// }
+@font-face {
+  font-family: "SC Prosper Sans Variable";
+  font-style: normal;
+  font-weight: 100 1000;
+  src: url("https://av.sc.com/assets/global/fonts/SCProsperSansVariable-VF.woff2") format("woff2"), url("https://av.sc.com/assets/global/fonts/SCProsperSansVariable-VF.woff") format("woff"), url("https://av.sc.com/assets/global/fonts/SCProsperSansVariable-VF.ttf") format("truetype")
+}
 
 html {
   scroll-behavior: smooth;
@@ -13,9 +11,7 @@ html {
 
 html,
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "SC Prosper Sans Variable";
   font-size: 16px;
   font-weight: $font-regular;
   line-height: 1.3;
