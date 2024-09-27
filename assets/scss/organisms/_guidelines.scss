@@ -7,23 +7,40 @@
         }
     }
 
+    &__outer {
+        padding: 40px 0px;
+    }
+
     &__subhead {
-        font-size: 18px;
+        font-size: 20px;
         color: #000000;
         text-align: center;
         margin: 10px 0px 0px 0px;
     }
 
+    &__cardwrap {
+        padding: 30px 0px 0px 0px;
+    }
+
     &__card {
         background-color: #ffffff;
         padding: 30px;
+        width: 100%;
         display: flex;
+        align-items: center;
+        margin: 25px 0px;
+        border-radius: 8px;
+        position: relative;
+
+        &.align-top {
+            align-items: start;
+        }
     }
 
     &__cardindex {
         border: 1px solid #378AF2;
-        border-radius: 15px;
-        background-color: #427EEE;
+        border-radius: 50%;
+        background-image: radial-gradient(circle at top left, #36A08A, #427EEE);
         width: 25px;
         height: 25px;
         display: flex;
@@ -32,8 +49,10 @@
     }
 
     &__index {
-        font-size: 10px;
+        font-size: 14px;
         color: #ffffff;
+        font-weight: 500;
+        padding-top: 3px;
     }
 
     &__crdcontent {
@@ -41,15 +60,71 @@
     }
 
     &__contenta {
-        font-size: 16px;
+        font-size: 18px;
         color: #000000;
         font-weight: 500;
     }
 
     &__contentb {
-        font-size: 14px;
+        font-size: 16px;
         color: #000000;
-        font-weight: 100;
-        padding-top: 12px;
+        font-weight: 300;
+        padding-top: 15px;
+    }
+
+    &__dwnarrow {
+        width: 3%;
+        position: absolute;
+        right: 25px;
+        top: 31%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__accordcontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .lr-guidelines__crdcontent{
+            flex: 1;
+        }
+    }
+
+    &__accrd {
+        .accordion-item {
+            border: none;
+        }
+    }
+}
+
+
+@include mobile {
+    .lr-guidelines {
+
+        .lr-heading {
+            &.blackclr {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        &__card {
+            flex-direction: column;
+            align-items: start;
+            padding: 20px;
+        }
+
+        &__crdcontent {
+            padding-top: 12px;
+            padding-left: 0;
+        }
+
+        &__subhead {
+            padding: 0px 10px;
+        }
     }
 }
