@@ -17,5 +17,39 @@
     &__card {
         background-color: #ffffff;
         padding: 30px;
+        display: flex;
+    }
+
+    &__cardindex {
+        border: 1px solid #378AF2;
+        border-radius: 15px;
+        background-color: #427EEE;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__index {
+        font-size: 10px;
+        color: #ffffff;
+    }
+
+    &__crdcontent {
+        padding-left: 20px;
+    }
+
+    &__contenta {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 500;
+    }
+
+    &__contentb {
+        font-size: 14px;
+        color: #000000;
+        font-weight: 100;
+        padding-top: 12px;
     }
 }
