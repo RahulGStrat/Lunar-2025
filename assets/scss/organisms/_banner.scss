@@ -1,11 +1,12 @@
 .lr-banner {
     padding: 20px 0;
-    min-height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
+    &__out {
+        padding: 40px 0;
+    }
     &__head {
         font-size: 52px;
         font-weight: 300;
@@ -18,7 +19,74 @@
         font-size: 22px;
     }
     &__cta {
-        width: 14%;
+        width: 16%;
         margin-top: 40px;
+    }
+}
+.lr-bannerdwn {
+    background-color: #191919;
+    
+    &__dflex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 0;
+        width: 100%;
+
+        p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 500;
+        }
+    }
+    &__cta2 {
+        width: 16%;
+        a {
+            padding: 13px 16px;
+        }
+    }
+}
+@include tablet {
+    .lr-banner {
+        &__cta {
+            width: 20%;
+            margin-top: 40px;
+        }
+    }
+    .lr-bannerdwn {
+        &__cta2 {
+            width: 20%;
+        }
+    }
+}
+@include mobile {
+    .lr-banner {
+        &__out {
+            padding: 40px 10px;
+        }
+        &__head {
+            font-size: 32px;
+        }
+        &__para {
+            display: none;
+        }
+        &__cta {
+           display: none;
+        }
+    }
+    .lr-bannerdwn {
+        &__dflex {
+            p {
+                font-size: 14px;
+                width: 60%;
+            }
+        }
+        &__cta2 {
+            width: 30%;
+            a {
+                padding: 10px 12px;
+            }
+        }
     }
 }
