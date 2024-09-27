@@ -1,0 +1,20 @@
+.lr-tab {
+    background-color: #A81E1D;
+    padding: 32px 0;
+    
+    &__head {
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        padding-bottom: 24px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        padding-bottom: 24px;
+    }
+}
