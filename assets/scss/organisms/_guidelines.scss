@@ -1,0 +1,21 @@
+.lr-guidelines {
+    background-color: #FAE5E8;
+
+    .lr-heading {
+        &.blackclr {
+            padding-bottom: 10px;
+        }
+    }
+
+    &__subhead {
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+        margin: 10px 0px 0px 0px;
+    }
+
+    &__card {
+        background-color: #ffffff;
+        padding: 30px;
+    }
+}
