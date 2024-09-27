@@ -5,4 +5,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    &__head {
+        font-size: 52px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        line-height: 20px;
+        color: #fff;
+    }
+    &__para {
+        color: #fff;
+        font-size: 22px;
+    }
+    &__cta {
+        width: 14%;
+        margin-top: 40px;
+    }
 }

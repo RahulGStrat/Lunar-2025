@@ -1,0 +1,17 @@
+.lr-applycta{
+    display: flex;
+    width: auto;
+    padding: 4px 12px;
+    background-color: #2772C7;
+    color: #fff;
+    border: 1px solid #2772C7;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: #fff;
+    }
+}
