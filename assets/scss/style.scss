@@ -8,11 +8,16 @@
 @import "./base/dev";
 
 // atoms
+@import "./atoms/heading";
 
 // molecule
 
 // organisms
+@import "./organisms/reservation";
+@import "./organisms/guidelines";
 @import "organisms/eAngBaos-tab";
 @import "./organisms/eAngBaos";
+
+// pages
 
 // pages
