@@ -8,6 +8,11 @@
 @import "./base/dev";
 
 // atoms
+@import './atoms/applycta';
+// molecule
+
+// organisms
+@import './organisms/banner';
 @import "./atoms/heading";
 
 // molecule
@@ -18,6 +23,7 @@
 @import "organisms/eAngBaos-tab";
 @import "./organisms/eAngBaos";
 
+@import './organisms/guidlines-top';
 // pages
 
 @import "./organisms/guidelines";
