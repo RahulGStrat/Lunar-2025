@@ -1,0 +1,33 @@
+.lr-reserve {
+   display: flex;
+   justify-content: space-between;
+   &__head {
+      margin-top: 40px;
+   }
+   &__copy {
+      font-size: 18px;
+      text-align: center;
+      margin: 20px 60px;
+      width: 69%;
+   }
+   &__left, &__right {
+      width: 350px;
+      img {
+         width: 100%;
+      }
+   }
+   &__center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   &__chart {
+      border-radius: 30px;
+   }
+   &__chartcpy {
+      font-size: 18px;
+      color: #fff;
+      background-color: #D0342F;
+      text-align: center;
+   }
+}
