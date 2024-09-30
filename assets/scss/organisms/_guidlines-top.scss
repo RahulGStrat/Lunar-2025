@@ -1,41 +1,48 @@
 .lu-gdtop {
     padding: 40px 0;
+
     &__out {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
     &__para {
         color: #262626;
         font-size: 18px;
         text-align: center;
         display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
         padding-top: 36px;
         width: 80%;
         font-weight: 500;
     }
+
     &__downpara {
         padding-top: 36px;
         font-size: 18px;
         color: #4988CF;
         text-align: center;
+        margin-bottom: 20px;
     }
 }
+
 @include tablet {
     .lu-gdtop {
-        &__para {         
+        &__para {
             width: 100%;
-        } 
+        }
     }
 }
+
 @include mobile {
     .lu-gdtop {
         &__heading {
             font-weight: 500;
         }
+
         &__para {
             color: #7D7F84;
             font-size: 15px;
@@ -43,6 +50,7 @@
             width: 100%;
             font-weight: 500;
         }
+
         &__downpara {
             padding-top: 20px;
             font-size: 14px;
