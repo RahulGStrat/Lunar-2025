@@ -118,6 +118,13 @@
             flex-direction: column;
             align-items: start;
             padding: 20px;
+
+            &.active {
+    
+                .lr-guidelines__accrdncontent {
+                    padding: 15px 0px;
+                }
+            }
         }
 
         &__crdcontent {
@@ -127,6 +134,15 @@
 
         &__subhead {
             padding: 0px 10px;
+        }
+
+        &__wrapa {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__accrdncontent {
+            padding: 15px 20px 15px 20px;
         }
     }
 }
