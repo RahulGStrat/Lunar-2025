@@ -108,6 +108,34 @@
    }
 }
 
+@include tablet-pro {
+   .lr-reserve {
+      &__hide {
+         display: none;
+      }
+
+      &__show {
+         display: block;
+      }
+   }
+}
+
+@include tablet {
+   .lr-reserve {
+      &__hide {
+         display: none;
+      }
+
+      &__show {
+         display: block;
+      }
+
+      &__img {
+         right: 7%;
+      }
+   }
+}
+
 @include mobile {
    .lr-reserve {
       &__head {
