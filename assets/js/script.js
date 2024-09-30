@@ -1,9 +1,10 @@
 // eAngBaos slide
-$('.steps').slick({
+$('.steps-slider').slick({
     dots: false,
     arrows: false,
-    infinite: true,
+    infinite: false,
+    autoplay: true,
     speed: 500,
-    // fade: true,
-    // cssEase: 'linear'
+    fade: true,
+    cssEase: 'linear'
 });
