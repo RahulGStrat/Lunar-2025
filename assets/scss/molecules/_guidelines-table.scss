@@ -1,5 +1,7 @@
 .lr-guidelinestable {
 
+    padding: 10px 70px 30px 70px;
+
     &__table {
         width: 100%;
     }
@@ -11,6 +13,7 @@
         font-size: 16px;
         text-align: left;
         padding: 10px 15px 10px 15px;
+        vertical-align: middle;
 
         &.txt-cntr {
             text-align: center;
@@ -24,6 +27,7 @@
         text-align: left;
         padding: 15px 15px 15px 15px;
         font-size: 14px;
+        vertical-align: middle;
     }
 
     &__greycell {
@@ -33,6 +37,7 @@
         text-align: left;
         padding: 15px 15px 15px 15px;
         font-size: 14px;
+        vertical-align: middle;
     }
 }
 
