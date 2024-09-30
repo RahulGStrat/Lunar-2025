@@ -79,6 +79,37 @@
    }
 }
 
+@include tablet-pro {
+   .lr-reserve {
+      &__hide {
+         display: none;
+      }
+      &__show {
+         display: block;
+      }
+      &__center {
+         width: 80%;
+      }
+   }
+}
+
+@include tablet {
+   .lr-reserve {
+      &__hide {
+         display: none;
+      }
+      &__show {
+         display: block;
+      }
+      &__center {
+         width: 80%;
+      }
+      &__img {
+         right: 7%;
+      }
+   }
+}
+
 @include mobile {
    .lr-reserve {
       &__head {
@@ -127,7 +158,7 @@
             }
          }
          th,td {
-            padding: 16px 24px;
+            padding: 16px 20px;
          }
       }
    }
