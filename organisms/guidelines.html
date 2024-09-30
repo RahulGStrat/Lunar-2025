@@ -143,34 +143,19 @@
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
     <script>
-        // const btn = document.querySelectorAll(".lr-guidelines__wrapa");
-        // const Body = document.querySelectorAll(".lr-guidelines__accrdncontent");
-
-        // btn.forEach((Button) => {
-        //     Button.addEventListener("click", () => {
-        //         Button.classList.remove("active");
-        //         Button.classList.toggle("active");
-        //         Body.forEach((bdy) => {
-        //             bdy.classList.remove("active");
-        //             bdy.classList.toggle("active");
-        //         });
-        //     });
-        // });
 
         const btn = document.querySelectorAll(".lr-guidelines__wrapa");
         const bodies = document.querySelectorAll(".lr-guidelines__accrdncontent");
 
         btn.forEach((Button, index) => {
             Button.addEventListener("click", () => {
-                // First, deactivate all buttons and bodies
-                btn.forEach((btnItem) => btnItem.classList.remove("active"));
-                bodies.forEach((bodyItem) => bodyItem.classList.remove("active"));
-
-                // Then activate the clicked button and corresponding body
+                // Toggle active class on the clicked button
                 Button.classList.toggle("active");
+                // Toggle active class on the corresponding body
                 bodies[index].classList.toggle("active");
             });
         });
+
 
     </script>
     <!-- scripts -->
