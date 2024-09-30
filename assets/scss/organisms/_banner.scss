@@ -1,0 +1,119 @@
+.lr-banner {
+    position: relative;
+    height: 100%;
+    &__desk, &__mob {
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &__out {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 410px;
+        padding: 32px 0;
+    }
+    &__head {
+        font-size: 52px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        line-height: 20px;
+        color: #fff;
+    }
+    &__para {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    &__cta {
+        width: 16%;
+        margin-top: 40px;
+    }
+}
+.lr-bannerdwn {
+    background-color: #191919;
+    &__dflex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 0;
+        width: 100%;
+
+        p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 500;
+        }
+    }
+
+    &__cta2 {
+        width: 16%;
+        a {
+            padding: 13px 16px;
+        }
+    }
+}
+@include tablet {
+    .lr-banner {
+        &__desk {
+            background-position: 100%;
+        }
+        &__cta {
+            width: 20%;
+            margin-top: 40px;
+        }
+    }
+    .lr-bannerdwn {
+        &__cta2 {
+            width: 20%;
+        }
+    }
+}
+@include mobile {
+    .lr-banner {
+        &__out {
+            padding: 40px 10px;
+            height: 310px;
+            justify-content: flex-start;
+        }
+        &__head {
+            font-size: 32px;
+        }
+        &__para {
+            display: none;
+        }
+        &__cta {
+           display: none;
+        }
+    }
+    .lr-bannerdwn {
+        &__dflex {
+            p {
+                font-size: 14px;
+                width: 60%;
+            }
+        }
+        &__dflex {
+            p {
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        &__cta2 {
+            width: 35%;
+            a {
+                padding: 10px 12px;
+            }
+            .lr-applycta {
+                font-size: 14px;
+            }
+        }
+    }
+}

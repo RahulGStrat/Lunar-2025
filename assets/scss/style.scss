@@ -8,12 +8,25 @@
 @import "./base/dev";
 
 // atoms
+@import './atoms/applycta';
+// molecule
+
+// organisms
+@import './organisms/banner';
 @import "./atoms/heading";
 
 // molecule
 @import "./molecules/guidelines-table";
 @import "./molecules/guidelines-list";
 // organisms
+@import "./organisms/reservation";
+@import "./organisms/guidelines";
+@import "organisms/eAngBaos-tab";
+@import "./organisms/eAngBaos";
+
+@import './organisms/guidlines-top';
+// pages
+
 @import "./organisms/guidelines";
 @import "./organisms/reservation";
 

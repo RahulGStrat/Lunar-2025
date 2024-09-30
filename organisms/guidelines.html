@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <!-- card-05 -->
-                    <div class="lr-guidelines__card active">
+                    <div class="lr-guidelines__card lr-guidelines__card--accd">
                         <div class="lr-guidelines__wrapa">
                             <div class="lr-guidelines__cardindex">
                                 <p class="lr-guidelines__index">5</p>
@@ -86,7 +86,11 @@
                                     </p>
                                 </div>
                                 <div class="lr-guidelines__dwnarrow">
-                                    <img src="../assets/images/lr-card-dwnarrow.png" alt="">
+                                    <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="22" height="22" rx="11" fill="white" />
+                                        <path d="M15.3333 9L10.6667 13.8485L6 9" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +108,7 @@
                         </div>
                     </div>
                     <!-- card-07 -->
-                    <div class="lr-guidelines__card">
+                    <div class="lr-guidelines__card lr-guidelines__card--accd">
                         <div class="lr-guidelines__wrapa">
                             <div class="lr-guidelines__cardindex">
                                 <p class="lr-guidelines__index">7</p>
@@ -116,7 +120,11 @@
                                     </p>
                                 </div>
                                 <div class="lr-guidelines__dwnarrow">
-                                    <img src="../assets/images/lr-card-dwnarrow.png" alt="">
+                                    <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="22" height="22" rx="11" fill="white" />
+                                        <path d="M15.3333 9L10.6667 13.8485L6 9" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -134,6 +142,37 @@
     <script src="../assets/js/slick.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        // const btn = document.querySelectorAll(".lr-guidelines__wrapa");
+        // const Body = document.querySelectorAll(".lr-guidelines__accrdncontent");
+
+        // btn.forEach((Button) => {
+        //     Button.addEventListener("click", () => {
+        //         Button.classList.remove("active");
+        //         Button.classList.toggle("active");
+        //         Body.forEach((bdy) => {
+        //             bdy.classList.remove("active");
+        //             bdy.classList.toggle("active");
+        //         });
+        //     });
+        // });
+
+        const btn = document.querySelectorAll(".lr-guidelines__wrapa");
+        const bodies = document.querySelectorAll(".lr-guidelines__accrdncontent");
+
+        btn.forEach((Button, index) => {
+            Button.addEventListener("click", () => {
+                // First, deactivate all buttons and bodies
+                btn.forEach((btnItem) => btnItem.classList.remove("active"));
+                bodies.forEach((bodyItem) => bodyItem.classList.remove("active"));
+
+                // Then activate the clicked button and corresponding body
+                Button.classList.toggle("active");
+                bodies[index].classList.toggle("active");
+            });
+        });
+
+    </script>
     <!-- scripts -->
   </body>
 </html>
