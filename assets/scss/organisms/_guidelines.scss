@@ -124,6 +124,13 @@
         display: none;
         width: 100%;
     }
+
+    &__contentwrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 
@@ -131,6 +138,7 @@
     .lr-guidelines {
 
         .lr-heading {
+            font-size: 28px;
             &.blackclr {
                 padding-left: 10px;
                 padding-right: 10px;
@@ -146,6 +154,12 @@
     
                 .lr-guidelines__accrdncontent {
                     padding: 15px 0px;
+                }
+            }
+
+            &--accd {
+                .lr-guidelines__wrapa {
+                    padding: 0px;
                 }
             }
         }
@@ -165,7 +179,17 @@
         }
 
         &__accrdncontent {
-            padding: 15px 20px 15px 20px;
+            padding: 15px 0px 15px 0px;
+        }
+
+        &__dwnarrow {
+            width: 25px;
+            margin-top: 10px;
+        }
+
+        &__contentwrap {
+            flex-direction: column;
+            align-items: flex-end;
         }
     }
 }
