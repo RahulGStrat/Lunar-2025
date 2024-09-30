@@ -9,12 +9,12 @@
    &__copy {
       font-size: 20px;
       text-align: center;
-      margin: 20px 0px 60px;
+      margin: 20px 0px 65px;
    }
 
    &__left,
    &__right {
-      width: 140px;
+      width: 110px;
 
       img {
          width: 100%;
@@ -25,6 +25,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 80%;
    }
 
    &__chart {
@@ -40,6 +41,18 @@
       padding: 24px;
       border-top-left-radius: 24px;
       border-top-right-radius: 24px;
+   }
+
+   &__show {
+      display: none;
+   }
+
+   &__collect {
+      background-color: #A81E1D;
+      padding: 40px 60px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      margin-bottom: 20px;
    }
 
    &__img {
@@ -97,8 +110,13 @@
 
 @include mobile {
    .lr-reserve {
+      &__head {
+         font-size: 22px;
+      }
+
       &__copy {
          font-size: 16px;
+         margin: 4px 0px 40px;
       }
 
       &__left,
@@ -106,8 +124,54 @@
          display: none;
       }
 
+      &__show {
+         display: block;
+      }
+
       &__hide {
          display: none;
+      }
+
+      &__center {
+         padding: 0 16px;
+         width: 100%;
+      }
+
+      &__chartcpy {
+         font-size: 15px;
+         text-align: left;
+         padding: 50px 30px;
+         border-top-left-radius: 0;
+         border-top-right-radius: 0;
+      }
+
+      &__collect {
+         padding: 0;
+         background-color: #fff;
+         margin-top: 20px;
+      }
+
+      &__img {
+         width: 66px;
+         top: 24px;
+         right: 12px;
+      }
+
+      &__chartouter.content-wrapper {
+         padding: 0px;
+      }
+
+      &__table {
+         tr {
+            td:first-child {
+               padding: 0 0 0 12px;
+            }
+         }
+
+         th,
+         td {
+            padding: 16px 20px;
+         }
       }
    }
 }
