@@ -74,33 +74,27 @@
                         </div>
                     </div>
                     <!-- card-05 -->
-                    <div class="lr-guidelines__card">
-                        <div class="lr-guidelines__cardindex">
-                            <p class="lr-guidelines__index">5</p>
-                        </div>
-                        <div class="lr-guidelines__accordcontainer">
-                            <!-- card content -->
-                        <div class="lr-guidelines__crdcontent">
-                        </div>
-                        <!-- accordion starts here -->
-                        <div class="accordion lr-guidelines__accrd" id="accordionExample">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button lr-guidelines__accrdbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="lr-guidelines__card lr-guidelines__card--accd">
+                        <div class="lr-guidelines__wrapa">
+                            <div class="lr-guidelines__cardindex">
+                                <p class="lr-guidelines__index">5</p>
+                            </div>
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <div class="lr-guidelines__crdcontent">
                                     <p class="lr-guidelines__contenta">
                                         Select your preferred collection date, time and branch location.
                                     </p>
-                                </button>
-                              </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body lr-guidelines__accrdcontent">
-                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                 </div>
-                              </div>
+                                <div class="lr-guidelines__dwnarrow">
+                                    <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="22" height="22" rx="11" fill="white" />
+                                        <path d="M15.3333 9L10.6667 13.8485L6 9" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
                             </div>
-                          </div>
-                        <!-- accordion ends here -->
                         </div>
+                        <div class="lr-guidelines__accrdncontent">hi there</div>
                     </div>
                     <!-- card-06 -->
                     <div class="lr-guidelines__card">
@@ -114,18 +108,27 @@
                         </div>
                     </div>
                     <!-- card-07 -->
-                    <div class="lr-guidelines__card">
-                        <div class="lr-guidelines__cardindex">
-                            <p class="lr-guidelines__index">7</p>
+                    <div class="lr-guidelines__card lr-guidelines__card--accd">
+                        <div class="lr-guidelines__wrapa">
+                            <div class="lr-guidelines__cardindex">
+                                <p class="lr-guidelines__index">7</p>
+                            </div>
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <div class="lr-guidelines__crdcontent">
+                                    <p class="lr-guidelines__contenta">
+                                        Collect your notes on the specified date and time at the selected branch.
+                                    </p>
+                                </div>
+                                <div class="lr-guidelines__dwnarrow">
+                                    <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="22" height="22" rx="11" fill="white" />
+                                        <path d="M15.3333 9L10.6667 13.8485L6 9" stroke="black" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
-                        <div class="lr-guidelines__crdcontent">
-                            <p class="lr-guidelines__contenta">
-                                Collect your notes on the specified date and time at the selected branch.
-                            </p>
-                        </div>
-                        <!-- accordion starts here -->
-
-                        <!-- accordion ends here -->
+                        <div class="lr-guidelines__accrdncontent">hi there</div>
                     </div>
                 </div>
             </div>
@@ -139,6 +142,22 @@
     <script src="../assets/js/slick.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+
+        const btn = document.querySelectorAll(".lr-guidelines__wrapa");
+        const bodies = document.querySelectorAll(".lr-guidelines__accrdncontent");
+
+        btn.forEach((Button, index) => {
+            Button.addEventListener("click", () => {
+                // Toggle active class on the clicked button
+                Button.classList.toggle("active");
+                // Toggle active class on the corresponding body
+                bodies[index].classList.toggle("active");
+            });
+        });
+
+
+    </script>
     <!-- scripts -->
   </body>
 </html>

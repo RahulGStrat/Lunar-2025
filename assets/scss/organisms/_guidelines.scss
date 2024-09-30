@@ -30,7 +30,20 @@
         align-items: center;
         margin: 25px 0px;
         border-radius: 8px;
-        position: relative;
+
+        &--accd {
+            padding: 0;
+            flex-direction: column;
+            cursor: pointer;
+            .lr-guidelines__wrapa {
+                padding: 30px;
+            }
+            .lr-guidelines__accrdncontent {
+                &.active {
+                    display: block;
+                }
+            }
+        }
 
         &.align-top {
             align-items: start;
@@ -59,6 +72,27 @@
         padding-left: 20px;
     }
 
+    &__wrapa {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        &.active {
+            .lr-guidelines__dwnarrow {
+                transform: rotate(180deg);
+                transition: 0.3s;
+                svg {
+                    rect {
+                        fill: #0089ED;
+                        stroke: #0089ED;
+                    }
+                    path {
+                        stroke: #fff;
+                    }
+                }
+            }    
+        }
+    }
+
     &__contenta {
         font-size: 18px;
         color: #000000;
@@ -73,31 +107,23 @@
     }
 
     &__dwnarrow {
-        width: 3%;
-        position: absolute;
-        right: 25px;
-        top: 31%;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    &__accordcontainer {
+        width: 30px;
+        height: 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        width: 100%;
+            transition: 0.3s;
 
-        .lr-guidelines__crdcontent{
-            flex: 1;
+        svg {
+            border: 2px solid #D9D9D9;
+            border-radius: 50%;
         }
     }
 
-    &__accrd {
-        .accordion-item {
-            border: none;
-        }
+    &__accrdncontent {
+        display: none;
+        padding: 30px;
+        width: 100%;
     }
 }
 
@@ -116,6 +142,13 @@
             flex-direction: column;
             align-items: start;
             padding: 20px;
+
+            &.active {
+    
+                .lr-guidelines__accrdncontent {
+                    padding: 15px 0px;
+                }
+            }
         }
 
         &__crdcontent {
@@ -125,6 +158,15 @@
 
         &__subhead {
             padding: 0px 10px;
+        }
+
+        &__wrapa {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__accrdncontent {
+            padding: 15px 20px 15px 20px;
         }
     }
 }
