@@ -1,20 +1,15 @@
 .lr-applycta {
     display: flex;
-    width: auto;
-    padding: 8px 20px;
-    background-color: #2772C7;
     color: #fff;
-    border: 1px solid #2772C7;
-    border-radius: 50px;
     text-align: center;
     text-decoration: none;
     justify-content: center;
     align-items: center;
     font-size: 16px;
     font-weight: 500;
-    &:hover {
-        color: #2772C7;
-        background-color: #fff;
-        border: 1px solid #2772C7;
-    }
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 42px;
+    width: 100%;
 }

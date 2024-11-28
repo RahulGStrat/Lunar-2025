@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+	  <!--<link rel="stylesheet" href="https://av.sc.com/sg/lny-new-notes-reservation/style.css">-->
+    <!-- styles -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- body content start -->
+
+   <style>
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      font-weight: inherit;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    blockquote,
+    q {
+      quotes: none;
+    }
+
+    blockquote:before, blockquote:after {
+      content: "";
+      content: none;
+    }
+
+    q:before, q:after {
+      content: "";
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    input,
+    textarea,
+    select {
+      margin: 0;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+    }
+
+    textarea {
+      overflow: auto;
+    }
+
+    button::-moz-focus-inner,
+    input[type=button]::-moz-focus-inner,
+    input[type=submit]::-moz-focus-inner,
+    input[type=reset]::-moz-focus-inner {
+      padding: 0 !important;
+      border: 0 none !important;
+    }
+
+    mark {
+      background: none;
+      color: inherit;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: "SC Prosper Sans Variable";
+      font-style: normal;
+      font-weight: 100 1000;
+      src: url("https://av.sc.com/assets/global/fonts/SCProsperSansVariable-VF.woff2") format("woff2"), url("https://av.sc.com/assets/global/fonts/SCProsperSansVariable-VF.woff") format("woff"), url("https://av.sc.com/assets/global/fonts/SCProsperSansVariable-VF.ttf") format("truetype");
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      font-family: "SC Prosper Sans Variable";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.3;
+      width: 100%;
+      min-height: 100%;
+      color: #000000;
+      background-color: #ffffff;
+    }
+
+    a,
+    button,
+    input {
+      outline: none;
+    }
+
+    a,
+    a:hover {
+      text-decoration: none;
+    }
+
+    p,
+    li {
+      margin-bottom: 0;
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+    }
+
+    *:focus {
+      outline: none;
+    }
+
+    .content-wrapper {
+      width: 100%;
+      max-width: 1240px;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .desk-visible {
+      display: block;
+    }
+
+    .only-mobile {
+      display: none;
+    }
+
+    .hide-mobile-tablet {
+      display: block;
+    }
+
+    .only-mobile-tablet {
+      display: none;
+    }
+
+    @media (max-width: 1023px) {
+      .content-wrapper {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+      .hide-mobile-tablet {
+        display: none;
+      }
+      .only-mobile-tablet {
+        display: block;
+      }
+    }
+    @media (max-width: 767px) {
+      .content-wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .desk-visible {
+        display: none;
+      }
+      .only-mobile {
+        display: block;
+      }
+    }
+    .lr-applycta {
+      display: flex;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 42px;
+      width: 100%;
+    }
+
+    .lr-banner {
+      position: relative;
+      height: 100%;
+    }
+    .lr-banner__desk, .lr-banner__mob {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .lr-banner__out {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 410px;
+      padding: 32px 0;
+    }
+    .lr-banner__head {
+      font-size: 52px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      line-height: 1.3;
+      color: #fff;
+    }
+    .lr-banner__para {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 300;
+    }
+    .lr-banner__cta {
+      width: 16%;
+      margin-top: 40px;
+    }
+
+    .lr-bannerdwn {
+      background-color: #191919;
+    }
+    .lr-bannerdwn__dflex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 0;
+      width: 100%;
+    }
+    .lr-bannerdwn__dflex p {
+      color: #fff;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 500;
+    }
+    .lr-bannerdwn__cta2 {
+      width: 16%;
+    }
+    .lr-bannerdwn__cta2 a {
+      padding: 13px 16px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .lr-banner__desk {
+        background-position: 100%;
+      }
+      .lr-banner__cta {
+        width: 20%;
+        margin-top: 40px;
+      }
+      .lr-bannerdwn__cta2 {
+        width: 20%;
+      }
+    }
+    @media (max-width: 767px) {
+      .lr-banner__out {
+        padding: 40px 10px;
+        height: 310px;
+        justify-content: flex-start;
+      }
+      .lr-banner__head {
+        font-size: 31px;
+      }
+      .lr-banner__para {
+        display: none;
+      }
+      .lr-banner__cta {
+        display: none;
+      }
+      .lr-bannerdwn__dflex p {
+        font-size: 14px;
+        width: 60%;
+      }
+      .lr-bannerdwn__dflex p {
+        font-size: 13px;
+        line-height: 18px;
+      }
+      .lr-bannerdwn__cta2 {
+        width: 35%;
+      }
+      .lr-bannerdwn__cta2 a {
+        padding: 10px 12px;
+      }
+      .lr-bannerdwn__cta2 .lr-applycta {
+        font-size: 14px;
+      }
+    }
+    .lr-heading {
+      font-size: 32px;
+      color: #2772C7;
+      padding: 20px 0;
+      text-align: center;
+      font-weight: 400;
+    }
+    .lr-heading.blackclr {
+      color: #000;
+    }
+    .lr-heading.whiteclr {
+      color: #fff;
+    }
+
+    .lr-guidelinestable {
+      padding: 10px 70px 30px 70px;
+    }
+    .lr-guidelinestable__table {
+      width: 100%;
+    }
+    .lr-guidelinestable__hdcell {
+      width: 50%;
+      background-color: #F7FBFF;
+      color: #7EABDF;
+      font-size: 16px;
+      text-align: left;
+      padding: 10px 15px 10px 15px;
+      vertical-align: middle;
+    }
+    .lr-guidelinestable__hdcell.txt-cntr {
+      text-align: center;
+    }
+    .lr-guidelinestable__cell {
+      width: 50%;
+      background-color: transparent;
+      color: #999999;
+      text-align: left;
+      padding: 15px 15px 15px 15px;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    .lr-guidelinestable__greycell {
+      width: 50%;
+      background-color: #F8F8F8;
+      color: #999999;
+      text-align: left;
+      padding: 15px 15px 15px 15px;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 767px) {
+      .lr-guidelinestable {
+        padding: 10px 0px 20px 0px;
+      }
+      .lr-guidelinestable__hdcell.txt-cntr {
+        text-align: left;
+      }
+    }
+    .lr-guidelineslist {
+      padding: 10px 60px 30px 75px;
+    }
+    .lr-guidelineslist__head {
+      font-size: 18px;
+      color: #000000;
+      padding-bottom: 10px;
+    }
+    .lr-guidelineslist__listwrap {
+      padding-left: 30px;
+    }
+    .lr-guidelineslist__listwrap ul {
+      list-style-type: disc;
+    }
+    .lr-guidelineslist__list {
+      color: #818388;
+      font-size: 16px;
+      padding: 6px 0px;
+      position: relative;
+    }
+    .lr-guidelineslist__list::marker {
+      font-size: 16px;
+      color: #818388;
+      position: absolute;
+    }
+    .lr-guidelineslist__content {
+      color: #818388;
+      font-size: 16px;
+      padding-top: 10px;
+    }
+
+    @media (max-width: 767px) {
+      .lr-guidelineslist {
+        padding: 20px 0px;
+      }
+    }
+    .lr-reserve {
+      display: flex;
+      justify-content: space-between;
+    }
+    .lr-reserve__head {
+      margin-top: 40px;
+    }
+    .lr-reserve__copy {
+      font-size: 20px;
+      text-align: center;
+      margin: 20px 0px 65px;
+    }
+    .lr-reserve__left, .lr-reserve__right {
+      width: 110px;
+    }
+    .lr-reserve__left img, .lr-reserve__right img {
+      width: 100%;
+    }
+    .lr-reserve__center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+    }
+    .lr-reserve__chart {
+      position: relative;
+      border-radius: 30px;
+    }
+    .lr-reserve__chartcpy {
+      font-size: 24px;
+      color: #fff;
+      background-color: #D0342F;
+      text-align: center;
+      padding: 24px;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+    }
+    .lr-reserve__show {
+      display: none;
+    }
+    .lr-reserve__collect {
+      background-color: #A81E1D;
+      padding: 40px 60px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      margin-bottom: 20px;
+    }
+    .lr-reserve__img {
+      position: absolute;
+      width: 100px;
+      top: -42px;
+      right: 15%;
+    }
+    .lr-reserve__table {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .lr-reserve__table thead tr {
+      background-color: #F7FBFF;
+    }
+    .lr-reserve__table tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+    .lr-reserve__table tr td:first-child {
+      text-align: right;
+    }
+    .lr-reserve__table tr td {
+      text-align: center;
+    }
+    .lr-reserve__table th {
+      color: #2772C7;
+      font-weight: 500;
+      text-align: center;
+    }
+    .lr-reserve__table th,
+    .lr-reserve__table td {
+      padding: 16px 0px;
+    }
+    .lr-reserve__collect {
+      background-color: #A81E1D;
+      padding: 40px 60px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1199px) {
+      .lr-reserve__hide {
+        display: none;
+      }
+      .lr-reserve__show {
+        display: block;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .lr-reserve__hide {
+        display: none;
+      }
+      .lr-reserve__show {
+        display: block;
+      }
+      .lr-reserve__img {
+        right: 7%;
+      }
+    }
+    @media (max-width: 767px) {
+      .lr-reserve__head {
+        font-size: 22px;
+      }
+      .lr-reserve__copy {
+        font-size: 16px;
+        margin: 4px 0px 40px;
+      }
+      .lr-reserve__left, .lr-reserve__right {
+        display: none;
+      }
+      .lr-reserve__show {
+        display: block;
+      }
+      .lr-reserve__hide {
+        display: none;
+      }
+      .lr-reserve__center {
+        padding: 0 16px;
+        width: 100%;
+      }
+      .lr-reserve__chartcpy {
+        font-size: 15px;
+        text-align: left;
+        padding: 50px 30px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .lr-reserve__collect {
+        padding: 0;
+        background-color: #fff;
+        margin-top: 20px;
+      }
+      .lr-reserve__img {
+        width: 66px;
+        top: 24px;
+        right: 12px;
+      }
+      .lr-reserve__chartouter.content-wrapper {
+        padding: 0px;
+      }
+      .lr-reserve__table tr td:first-child {
+        padding: 0 0 0 12px;
+      }
+      .lr-reserve__table th,
+      .lr-reserve__table td {
+        padding: 16px 20px;
+      }
+    }
+    .lr-guidelines {
+      background-color: #FAE5E8;
+    }
+    .lr-guidelines .lr-heading.blackclr {
+      padding-bottom: 10px;
+    }
+    .lr-guidelines__outer {
+      padding: 40px 0px;
+    }
+    .lr-guidelines__subhead {
+      font-size: 20px;
+      color: #000000;
+      text-align: center;
+      margin: 10px 0px 0px 0px;
+    }
+    .lr-guidelines__cardwrap {
+      padding: 30px 0px 0px 0px;
+    }
+    .lr-guidelines__card {
+      background-color: #ffffff;
+      padding: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin: 25px 0px;
+      border-radius: 8px;
+    }
+    .lr-guidelines__card--accd {
+      padding: 0;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .lr-guidelines__card--accd .lr-guidelines__wrapa {
+      padding: 30px;
+    }
+    .lr-guidelines__card--accd .lr-guidelines__accrdncontent.active {
+      display: block;
+    }
+    .lr-guidelines__card.align-top {
+      align-items: start;
+    }
+    .lr-guidelines__cardindex {
+      border: 1px solid #378AF2;
+      border-radius: 50%;
+      background-image: radial-gradient(circle at top left, #36A08A, #427EEE);
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .lr-guidelines__index {
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 500;
+      padding-top: 3px;
+    }
+    .lr-guidelines__crdcontent {
+      padding-left: 20px;
+    }
+    .lr-guidelines__wrapa {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+    .lr-guidelines__wrapa.active .lr-guidelines__dwnarrow {
+      transform: rotate(180deg);
+      transition: 0.3s;
+    }
+    .lr-guidelines__wrapa.active .lr-guidelines__dwnarrow svg rect {
+      fill: #0089ED;
+      stroke: #0089ED;
+    }
+    .lr-guidelines__wrapa.active .lr-guidelines__dwnarrow svg path {
+      stroke: #fff;
+    }
+    .lr-guidelines__contenta {
+      font-size: 18px;
+      color: #000000;
+      font-weight: 500;
+    }
+    .lr-guidelines__contentb {
+      font-size: 16px;
+      color: #000000;
+      font-weight: 300;
+      padding-top: 15px;
+    }
+    .lr-guidelines__dwnarrow {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    .lr-guidelines__dwnarrow svg {
+      border: 2px solid #D9D9D9;
+      border-radius: 50%;
+    }
+    .lr-guidelines__accrdncontent {
+      display: none;
+      width: 100%;
+    }
+    .lr-guidelines__contentwrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (max-width: 767px) {
+      .lr-guidelines .lr-heading {
+        font-size: 28px;
+      }
+      .lr-guidelines .lr-heading.blackclr {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .lr-guidelines__card {
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+      }
+      .lr-guidelines__card.active .lr-guidelines__accrdncontent {
+        padding: 15px 0px;
+      }
+      .lr-guidelines__card--accd .lr-guidelines__wrapa {
+        padding: 0px;
+      }
+      .lr-guidelines__crdcontent {
+        padding-top: 12px;
+        padding-left: 0;
+      }
+      .lr-guidelines__subhead {
+        padding: 0px 10px;
+      }
+      .lr-guidelines__wrapa {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .lr-guidelines__accrdncontent {
+        padding: 15px 0px 15px 0px;
+      }
+      .lr-guidelines__dwnarrow {
+        width: 25px;
+        margin-top: 10px;
+      }
+      .lr-guidelines__contentwrap {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+    .lr-tab {
+      background-color: #A81E1D;
+      padding: 32px 0;
+      display: none;
+    }
+    .lr-tab__head {
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      font-weight: 500;
+      padding-bottom: 24px;
+    }
+    .lr-tab__desc {
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      font-weight: 400;
+      padding-bottom: 32px;
+    }
+    .lr-tab .nav-link.active {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 3px solid #fff;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .lr-tab .nav-link {
+      color: #fff;
+      font-weight: 400;
+      border: 0;
+      padding: 8px 0;
+      margin: 0 8px;
+      font-size: 13px;
+    }
+    .lr-tab .nav-item {
+      width: 20%;
+    }
+    .lr-tab .tab-content .lr-tab__head {
+      padding-top: 32px;
+      margin-bottom: 16px;
+    }
+    .lr-tab__mob-img {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .lr-tab__mob-img img {
+      width: 75%;
+      height: auto;
+    }
+
+    @media (max-width: 767px) {
+      .lr-tab {
+        display: block;
+      }
+    }
+    .lr-eangbaos {
+      width: 100%;
+      height: 900px;
+      background-size: cover;
+      background-position: bottom center;
+      padding: 50px 0px;
+    }
+    .lr-eangbaos__title {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    .lr-eangbaos__title h2 {
+      font-size: 25px;
+      line-height: 35px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .lr-eangbaos__title h6 {
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+    }
+    .lr-eangbaos__bg {
+      width: 50%;
+      height: 450px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .lr-eangbaos__wrap {
+      display: flex;
+      gap: 20px;
+    }
+    .lr-eangbaos__right {
+      width: 50%;
+    }
+    .lr-eangbaos__inner {
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .lr-eangbaos__step {
+      display: flex;
+      position: relative;
+    }
+    .lr-eangbaos__step::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      border-left: 1px dashed #fff;
+      left: 12px;
+    }
+    .lr-eangbaos__step:last-child::after {
+      display: none;
+    }
+    .lr-eangbaos__num {
+      z-index: 1;
+    }
+    .lr-eangbaos__num span {
+      background: radial-gradient(78.33% 78.33% at 2.36% -6.53%, #2DB944 0%, #4478FF 100%);
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+    .lr-eangbaos__slide-img {
+      width: 100%;
+    }
+    .lr-eangbaos__slide-img img {
+      width: 40%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .lr-eangbaos__stptxt {
+      padding-left: 16px;
+      padding-bottom: 24px;
+    }
+    .lr-eangbaos__stptxt h3 {
+      font-size: 16px;
+      color: #fff;
+      padding-bottom: 4px;
+      font-weight: 500;
+    }
+    .lr-eangbaos__stptxt p {
+      font-size: 14px;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    @media (max-width: 767px) {
+      .lr-eangbaos {
+        display: none;
+      }
+    }
+    .lu-gdtop {
+      padding: 40px 0;
+    }
+    .lu-gdtop__out {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .lu-gdtop__para {
+      color: #262626;
+      font-size: 18px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 36px;
+      width: 80%;
+      font-weight: 500;
+    }
+    .lu-gdtop__downpara {
+      padding-top: 36px;
+      font-size: 18px;
+      color: #4988CF;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .lu-gdtop__para {
+        width: 100%;
+      }
+    }
+    @media (max-width: 767px) {
+      .lu-gdtop__heading {
+        font-weight: 500;
+      }
+      .lu-gdtop__para {
+        color: #7D7F84;
+        font-size: 15px;
+        padding-top: 20px;
+        width: 100%;
+        font-weight: 500;
+      }
+      .lu-gdtop__downpara {
+        padding-top: 20px;
+        font-size: 14px;
+        color: #4988CF;
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+    .lr-guidelines {
+      background-color: #FAE5E8;
+    }
+    .lr-guidelines .lr-heading.blackclr {
+      padding-bottom: 10px;
+    }
+    .lr-guidelines__outer {
+      padding: 40px 0px;
+    }
+    .lr-guidelines__subhead {
+      font-size: 20px;
+      color: #000000;
+      text-align: center;
+      margin: 10px 0px 0px 0px;
+    }
+    .lr-guidelines__cardwrap {
+      padding: 30px 0px 0px 0px;
+    }
+    .lr-guidelines__card {
+      background-color: #ffffff;
+      padding: 30px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin: 25px 0px;
+      border-radius: 8px;
+    }
+    .lr-guidelines__card--accd {
+      padding: 0;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .lr-guidelines__card--accd .lr-guidelines__wrapa {
+      padding: 30px;
+    }
+    .lr-guidelines__card--accd .lr-guidelines__accrdncontent.active {
+      display: block;
+    }
+    .lr-guidelines__card.align-top {
+      align-items: start;
+    }
+    .lr-guidelines__cardindex {
+      border: 1px solid #378AF2;
+      border-radius: 50%;
+      background-image: radial-gradient(circle at top left, #36A08A, #427EEE);
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .lr-guidelines__index {
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 500;
+      padding-top: 3px;
+    }
+    .lr-guidelines__crdcontent {
+      padding-left: 20px;
+    }
+    .lr-guidelines__wrapa {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+    .lr-guidelines__wrapa.active .lr-guidelines__dwnarrow {
+      transform: rotate(180deg);
+      transition: 0.3s;
+    }
+    .lr-guidelines__wrapa.active .lr-guidelines__dwnarrow svg rect {
+      fill: #0089ED;
+      stroke: #0089ED;
+    }
+    .lr-guidelines__wrapa.active .lr-guidelines__dwnarrow svg path {
+      stroke: #fff;
+    }
+    .lr-guidelines__contenta {
+      font-size: 18px;
+      color: #000000;
+      font-weight: 500;
+    }
+    .lr-guidelines__contentb {
+      font-size: 16px;
+      color: #000000;
+      font-weight: 300;
+      padding-top: 15px;
+    }
+    .lr-guidelines__dwnarrow {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    .lr-guidelines__dwnarrow svg {
+      border: 2px solid #D9D9D9;
+      border-radius: 50%;
+    }
+    .lr-guidelines__accrdncontent {
+      display: none;
+      width: 100%;
+    }
+    .lr-guidelines__contentwrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (max-width: 767px) {
+      .lr-guidelines .lr-heading {
+        font-size: 28px;
+      }
+      .lr-guidelines .lr-heading.blackclr {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .lr-guidelines__card {
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+      }
+      .lr-guidelines__card.active .lr-guidelines__accrdncontent {
+        padding: 15px 0px;
+      }
+      .lr-guidelines__card--accd .lr-guidelines__wrapa {
+        padding: 0px;
+      }
+      .lr-guidelines__crdcontent {
+        padding-top: 12px;
+        padding-left: 0;
+      }
+      .lr-guidelines__subhead {
+        padding: 0px 10px;
+      }
+      .lr-guidelines__wrapa {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .lr-guidelines__accrdncontent {
+        padding: 15px 0px 15px 0px;
+      }
+      .lr-guidelines__dwnarrow {
+        width: 25px;
+        margin-top: 10px;
+      }
+      .lr-guidelines__contentwrap {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+    .lr-reserve {
+      display: flex;
+      justify-content: space-between;
+    }
+    .lr-reserve__head {
+      margin-top: 40px;
+    }
+    .lr-reserve__copy {
+      font-size: 20px;
+      text-align: center;
+      margin: 20px 0px 65px;
+    }
+    .lr-reserve__left, .lr-reserve__right {
+      width: 110px;
+    }
+    .lr-reserve__left img, .lr-reserve__right img {
+      width: 100%;
+    }
+    .lr-reserve__center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+    }
+    .lr-reserve__chart {
+      position: relative;
+      border-radius: 30px;
+    }
+    .lr-reserve__chartcpy {
+      font-size: 24px;
+      color: #fff;
+      background-color: #D0342F;
+      text-align: center;
+      padding: 24px;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+    }
+    .lr-reserve__show {
+      display: none;
+    }
+    .lr-reserve__collect {
+      background-color: #A81E1D;
+      padding: 40px 60px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      margin-bottom: 20px;
+    }
+    .lr-reserve__img {
+      position: absolute;
+      width: 100px;
+      top: -42px;
+      right: 15%;
+    }
+    .lr-reserve__table {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .lr-reserve__table thead tr {
+      background-color: #F7FBFF;
+    }
+    .lr-reserve__table tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+    .lr-reserve__table tr td:first-child {
+      text-align: right;
+    }
+    .lr-reserve__table tr td {
+      text-align: center;
+    }
+    .lr-reserve__table th {
+      color: #2772C7;
+      font-weight: 500;
+      text-align: center;
+    }
+    .lr-reserve__table th,
+    .lr-reserve__table td {
+      padding: 16px 0px;
+    }
+    .lr-reserve__collect {
+      background-color: #A81E1D;
+      padding: 40px 60px;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1199px) {
+      .lr-reserve__hide {
+        display: none;
+      }
+      .lr-reserve__show {
+        display: block;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .lr-reserve__hide {
+        display: none;
+      }
+      .lr-reserve__show {
+        display: block;
+      }
+      .lr-reserve__img {
+        right: 7%;
+      }
+    }
+    @media (max-width: 767px) {
+      .lr-reserve__head {
+        font-size: 22px;
+      }
+      .lr-reserve__copy {
+        font-size: 16px;
+        margin: 4px 0px 40px;
+      }
+      .lr-reserve__left, .lr-reserve__right {
+        display: none;
+      }
+      .lr-reserve__show {
+        display: block;
+      }
+      .lr-reserve__hide {
+        display: none;
+      }
+      .lr-reserve__center {
+        padding: 0 16px;
+        width: 100%;
+      }
+      .lr-reserve__chartcpy {
+        font-size: 15px;
+        text-align: left;
+        padding: 50px 30px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .lr-reserve__collect {
+        padding: 0;
+        background-color: #fff;
+        margin-top: 20px;
+      }
+      .lr-reserve__img {
+        width: 66px;
+        top: 24px;
+        right: 12px;
+      }
+      .lr-reserve__chartouter.content-wrapper {
+        padding: 0px;
+      }
+      .lr-reserve__table tr td:first-child {
+        padding: 0 0 0 12px;
+      }
+      .lr-reserve__table th,
+      .lr-reserve__table td {
+        padding: 16px 20px;
+      }
+    }
+    .lr-tab {
+      background-color: #A81E1D;
+      padding: 32px 0;
+      display: none;
+    }
+    .lr-tab__head {
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      font-weight: 500;
+      padding-bottom: 24px;
+    }
+    .lr-tab__desc {
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+      font-weight: 400;
+      padding-bottom: 32px;
+    }
+    .lr-tab .nav-link.active {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 3px solid #fff;
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .lr-tab .nav-link {
+      color: #fff;
+      font-weight: 400;
+      border: 0;
+      padding: 8px 0;
+      margin: 0 8px;
+      font-size: 13px;
+    }
+    .lr-tab .nav-item {
+      width: 20%;
+    }
+    .lr-tab .tab-content .lr-tab__head {
+      padding-top: 32px;
+      margin-bottom: 16px;
+    }
+    .lr-tab__mob-img {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .lr-tab__mob-img img {
+      width: 75%;
+      height: auto;
+    }
+
+    @media (max-width: 767px) {
+      .lr-tab {
+        display: block;
+      }
+    }
+   </style>
+
+    <!-- hero-module -->
+    <div class="lr-banner" data-persistent-bar-target="lr-banner">
+      <div style="background-image: url('../assets/images/lny-banner-desk.png');" class="lr-banner__desk desk-visible"></div>
+      <div style="background-image: url('../assets/images/lny-banner-mob.jpg');" class="lr-banner__mob only-mobile"></div>
+      <div class="content-wrapper">
+       <div class="lr-banner__out">
+          <div class="lr-banner__head">
+            <h2>Lunar New Year 2025<br> Standard Chartered Singapore</h2>
+          </div>
+          <div class="lr-banner__para">
+            <p>Kickstart your LNY celebrations: Exchange your new <br>notes and Gift an e-Angbao with SC Mobile</p>
+          </div>
+          <div class="lr-banner__cta">
+            <a class="lr-applycta" style="background-image: url(..\/assets/images/lny-cta.png);">Reserve Now</a>
+          </div>
+       </div>
+      </div>
+     </div>
+     <div class="lr-bannerdwn" style="display: none;">
+      <div class="content-wrapper">
+        <div class="lr-bannerdwn__dflex">
+          <p>Lunar New Year 2025 New Notes Reservation & Collection</p>
+          <div class="lr-bannerdwn__cta2">
+            <a class="lr-applycta">Apply Now</a>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <!-- Notes and Reservation -->
+     <div class="lr-reserve">
+      <div class="lr-reserve__left">
+         <img src="https://av.sc.com/sg/content/images/lny-rsv-leftimg.png" alt="redglobe">
+        </div>
+        <div class="lr-reserve__center">
+         <h2 class="lr-heading lr-reserve__head">Lunar New Year 2025 New Notes Reservation & Collection</h2>
+         <p class="lr-reserve__copy">Lunar New Year is just around the corner! As we welcome the Year of the Snake, we wish you happiness,<br class="lr-reserve__hide"> health, and prosperity. Red packets are a cherished tradition symbolising good fortune and blessings. To help<br class="lr-reserve__hide"> you prepare, we're excited to offer online pre-ordering service for new and good-as-new banknotes.<br class="lr-reserve__hide"> Let's make this festive season even more special together!</p>
+        </div>
+        <div class="lr-reserve__right">
+         <img src="https://av.sc.com/sg/content/images/lny-rsv-rightimg.png" alt="redglobe">
+        </div>
+    </div>
+    <div class="lr-reserve__chartouter content-wrapper">
+      <div class="lr-reserve__chart">
+         <p class="lr-reserve__chartcpy">New notes reservation and <br class="lr-reserve__show"> collection will<br class="lr-reserve__hide"> be available from</p>
+         <img class="lr-reserve__img" src="https://av.sc.com/sg/content/images/lny-hamster-copy.png" alt="">
+      </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="lr-reserve__collect">
+          <table class="lr-reserve__table">
+              <thead>
+                <tr>
+                    <th></th>
+                    <th>Reservation Period</th>
+                    <th>Collection Period</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>Window&nbsp;1</td>
+                    <td>7 - 10 January, 8 am</td>
+                    <td>14-20 January</td>
+                </tr>
+                <tr>
+                    <td>Window&nbsp;2</td>
+                    <td>14 - 17 January, 8 am</td>
+                    <td>21 - 27 January</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+    </div>
+
+     <!-- Guidelines -->
+     <div class="lr-guidelines">
+      <div class="content-wrapper">
+          <div class="lr-guidelines__outer">
+              <!-- heading -->
+              <h2 class="lr-heading blackclr">Guidelines for New Notes Reservation & Collection</h2>
+              <!-- sub-head -->
+              <h5 class="lr-guidelines__subhead">
+                  Step-by-step guide on reserving your new notes
+              </h5>
+              <!-- card-wrap -->
+              <div class="lr-guidelines__cardwrap">
+                  <!-- card-01 -->
+                  <div class="lr-guidelines__card">
+                      <div class="lr-guidelines__cardindex">
+                          <p class="lr-guidelines__index">1</p>
+                      </div>
+                      <div class="lr-guidelines__crdcontent">
+                          <p class="lr-guidelines__contenta">
+                              Visit Standard Chartered's online notes reservation information site.
+                          </p>
+                      </div>
+                  </div>
+                  <!-- card-02 -->
+                  <div class="lr-guidelines__card">
+                      <div class="lr-guidelines__cardindex">
+                          <p class="lr-guidelines__index">2</p>
+                      </div>
+                      <div class="lr-guidelines__crdcontent">
+                          <p class="lr-guidelines__contenta">
+                              Once the reservation window opens, click on the 'Reserve Now' button.
+                          </p>
+                      </div>
+                  </div>
+                  <!-- card-03 -->
+                  <div class="lr-guidelines__card align-top">
+                      <div class="lr-guidelines__cardindex">
+                          <p class="lr-guidelines__index">3</p>
+                      </div>
+                      <div class="lr-guidelines__crdcontent">
+                          <p class="lr-guidelines__contenta">
+                             Enter your Mobile Number and Email Address.
+                          </p>
+                          <p class="lr-guidelines__contentb">
+                              Ensure your mobile number is updated at least 24 hours before reservation.
+                          </p>
+                      </div>
+                  </div>
+                  <!-- card-04 -->
+                  <div class="lr-guidelines__card lr-guidelines__card--accd">
+                    <div class="lr-guidelines__wrapa">
+                        <div class="lr-guidelines__cardindex">
+                            <p class="lr-guidelines__index">5</p>
+                        </div>
+                        <div class="lr-guidelines__contentwrap">
+                            <div class="lr-guidelines__crdcontent">
+                                <p class="lr-guidelines__contenta">
+                                    
+                                    Select your preferred branch location, date and time for collection.
+                        </p>
+                                </p>
+                            </div>
+                            <div class="lr-guidelines__dwnarrow">
+                                <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="22" height="22" rx="11" fill="white" />
+                                    <path d="M15.3333 9L10.6667 13.8485L6 9" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lr-guidelines__accrdncontent">
+                        <div class="lr-guidelinestable">
+                            <table class="lr-guidelinestable__table">
+                              <!-- heading -->
+                                <tr>
+                                    <td class="lr-guidelinestable__hdcell txt-cntr">Name</td>
+                                    <td class="lr-guidelinestable__hdcell">Address</td>
+                                </tr>
+                                <!-- l-01 -->
+                                <tr>
+                                    <td class="lr-guidelinestable__cell">Battery Road</td>
+                                    <td class="lr-guidelinestable__cell">6 Battery Road, Singapore 049909</td>
+                                </tr>
+                                <!-- l-02 -->
+                                <tr>
+                                    <td class="lr-guidelinestable__greycell">Clementi Mall</td>
+                                    <td class="lr-guidelinestable__greycell">3155 Commonwealth Avenue West, #04-16/17, Clementi Mall, Singapore 129588</td>
+                                </tr>
+                                <!-- l-03 -->
+                                <tr>
+                                  <td class="lr-guidelinestable__cell">JEM</td>
+                                  <td class="lr-guidelinestable__cell">50 Jurong Gateway Road, #B1-12, JEM, Singapore 608549</td>
+                                </tr>
+                                <!-- l-04 -->
+                                <tr>
+                                  <td class="lr-guidelinestable__greycell">Marine Parade</td>
+                                  <td class="lr-guidelinestable__greycell">Blk 87, Marine Parade Central, #01-500, Singapore 440087</td>
+                                </tr>
+                                <!-- l-05 -->
+                                <tr>
+                                  <td class="lr-guidelinestable__cell">Marina Bay Financial Centre Branch</td>
+                                  <td class="lr-guidelinestable__cell">8 Marina Boulevard. #01-01, Marina Bay Financial Centre Tower 1, Singapore 01898</td>
+                                </tr>
+                                <!-- l-06 -->
+                                <tr>
+                                  <td class="lr-guidelinestable__greycell">Nex Serangoon</td>
+                                  <td class="lr-guidelinestable__greycell">23 Serangoon Central, #03-02, NEX, Singapore 556083</td>
+                                </tr>
+                                <!-- l-07 -->
+                                <tr>
+                                  <td class="lr-guidelinestable__cell">Serangoon Garden</td>
+                                  <td class="lr-guidelinestable__cell">67 Serangoon Garden Way, Singapore 555963</td>
+                                </tr>
+                                <!-- l-08 -->
+                                <tr>
+                                  <td class="lr-guidelinestable__greycell">Sixth Avenue Priority Banking Centre</td>
+                                  <td class="lr-guidelinestable__greycell">Sixth Avenue Priority Banking Centre</td>
+                                </tr>
+                                <!-- l-09 -->
+                                <tr>
+                                  <td class="lr-guidelinestable__cell">Tampines</td>
+                                  <td class="lr-guidelinestable__cell">67 Serangoon Garden Way, Singapore 555963</td>
+                                </tr>
+                                <!-- l-10 -->
+                                <tr>
+                                  <td class="lr-guidelinestable__greycell">VivoCity</td>
+                                  <td class="lr-guidelinestable__greycell">1 Harbourfront Walk #B2-01 VivoCity Singapore 098585</td>
+                                </tr>
+                            </table>
+                         </div>
+                    </div>
+                </div>
+                 
+                  <!-- card-05 -->
+                  <div class="lr-guidelines__card">
+                    <div class="lr-guidelines__cardindex">
+                        <p class="lr-guidelines__index">4</p>
+                    </div>
+                    <div class="lr-guidelines__crdcontent">
+                        <p class="lr-guidelines__contenta">
+                          Select your preferred note denominations for exchange to
+                    </div>
+                </div>
+                  <!-- card-06 -->
+                  <div class="lr-guidelines__card">
+                      <div class="lr-guidelines__cardindex">
+                          <p class="lr-guidelines__index">6</p>
+                      </div>
+                      <div class="lr-guidelines__crdcontent">
+                          <p class="lr-guidelines__contenta">
+                       Verify your details and confirm your selection. You will receive a confirmation SMS and email within 24 hours of submitting your request.
+                          </p>
+                      </div>
+                  </div>
+                  <!-- card-07 -->
+                  <div class="lr-guidelines__card lr-guidelines__card--accd">
+                      <div class="lr-guidelines__wrapa">
+                          <div class="lr-guidelines__cardindex">
+                              <p class="lr-guidelines__index">7</p>
+                          </div>
+                          <div class="lr-guidelines__contentwrap">
+                              <div class="lr-guidelines__crdcontent">
+                                  <p class="lr-guidelines__contenta">
+                                      Collect your notes on the specified date and time at the selected branch.
+                                  </p>
+                              </div>
+                              <div class="lr-guidelines__dwnarrow">
+                                  <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <rect width="22" height="22" rx="11" fill="white" />
+                                      <path d="M15.3333 9L10.6667 13.8485L6 9" stroke="black" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round" />
+                                  </svg>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="lr-guidelines__accrdncontent">
+                          <div class="lr-guidelineslist">
+                              <h3 class="lr-guidelineslist__head">
+                                  Please take note of the following before proceeding with your booking:
+                              </h3>
+                              <div class="lr-guidelineslist__listwrap">
+                                  <ul>
+                                      <li class="lr-guidelineslist__list">Reservation of new notes is only for SC Clients</li>
+                                      <li class="lr-guidelineslist__list">SC Clients must have an active current or savings account for deduction of new notes exchange</li>
+                                      <li class="lr-guidelineslist__list">Each client can only make 1 online booking</li>
+                                      <li class="lr-guidelineslist__list">Ensure that your mobile number is updated in SCB's records. If not, you can login to SC Mobile App and update your mobile number under profile update</li>
+                                      <li class="lr-guidelineslist__list">A confirmation SMS will be sent in 24 hours</li>
+                                      <li class="lr-guidelineslist__list">No changes or cancellation may be made after booking is confirmed</li>
+                                      <li class="lr-guidelineslist__list">Collection time slots and note denominations are on a first-come-first-serve basis</li>
+                                      <li class="lr-guidelineslist__list">Unavailable slots will be greyed out to indicate that they are filled. Please pick another collection time</li>
+                                  </ul>
+                              </div>
+                              <p class="lr-guidelineslist__content">Please only collect your new notes on specified date, time and branch location. If you have missed your collection, your reservation request will automatically be cancelled. SCB seeks your cooperation to collect your new banknotes in an orderly manner.</p>
+                           </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+     </div>
+
+     <!-- Guidelines-New -->
+     <div class="lu-gdtop">
+      <div class="content-wrapper">
+        <div class="lu-gdtop__out">
+          <div class="lu-gdtop__heading">
+            <h2 class="lr-heading">Guidelines for New Note Branch Walks-Ins</h2>
+          </div>
+          <div class="lu-gdtop__para">
+            <p>Clients aged 60 and above or clients who require special assistance can visit our branches for new banknotes exchange without prior reservation from Day, xx January to Day, xx January 2025<br> (subject to Branch opearting hours).</p>
+          </div>
+          <p class="lu-gdtop__downpara">*You will need to bring either your NRIC,Malaysian NRIC or passport as well as your SCB Debit Card.</p>
+        </div>
+      </div>
+     </div>
+     <link rel="stylesheet" id="sc-nitro-persistent-bar-new-style-css" href="https://av.sc.com/assets/global/css/nitro/sc-persistent-bar.min.css?ver=3e4de1b" media="all">
+     <script defer="defer" src='https://av.sc.com/assets/global/js/nitro/sc-persistent-bar.min.js' id='sc-nitro-persistent-bar-new-script-js'></script>
+     <style>
+  .sc-persistent-bar{
+    padding: 20px 0;
+    background-color: #191919;
+  }
+       .sc-btn {
+       background-color: #2772C7;
+       color: #fff;
+       border: 1px solid #2772C7;
+       font-weight: 500;
+     }
+     .sc-btn:hover {
+       color: #2772C7;
+       background-color: #fff;
+       border: 1px solid #2772C7;
+     }
+     </style>
+     <div
+       class="sc-persistent-bar sc-persistent-bar--show"
+       id="sc-lb-module-persistent-bar-new"
+       data-post-status="publish-status"
+       data-post-status-label="Published"
+       style="bottom: 0px"
+     >
+       <div class="sc-content-wrapper">
+         <div class="sc-persistent-bar__content">
+           <div class="sc-persistent-bar__main-content">
+             <span class="sc-only-mobile"
+               >Lunar New Year 2025 New Notes Reservation & Collection</span
+             >
+             <span class="sc-only-desktop"
+               >Lunar New Year 2025 New Notes Reservation & Collection</span
+             >
+           </div>
+         </div>
+         <ul class="sc-inline-buttons">
+           <li class="sc-inline-buttons__item">
+             <a
+               href="#"
+               title="Reserve Now"
+               class="sc-btn sc-btn--medium"
+             >
+               <span class="sc-only-desktop">Reserve Now</span>
+               <span class="sc-only-mobile">Reserve Now</span>
+             </a> </li>
+         </ul>
+       </div>
+     </div>
+     
+
+    <!-- body content end -->
+
+    <!-- scripts -->
+    <!-- <script src="./assets/js/jquery.slim.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script> -->
+    <script>
+
+      const btn = document.querySelectorAll(".lr-guidelines__wrapa");
+      const bodies = document.querySelectorAll(".lr-guidelines__accrdncontent");
+
+      btn.forEach((Button, index) => {
+          Button.addEventListener("click", () => {
+              // Toggle active class on the clicked button
+              Button.classList.toggle("active");
+              // Toggle active class on the corresponding body
+              bodies[index].classList.toggle("active");
+          });
+      });
+
+    </script>
+    <!-- scripts -->
+  </body>
+</html>
+
