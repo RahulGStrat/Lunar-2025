@@ -23,3 +23,9 @@
         min-height: 33px;
     }
 }
+
+@include tablet-pro {
+    .lr-applycta  {
+        min-height: 35px;
+    }
+}
