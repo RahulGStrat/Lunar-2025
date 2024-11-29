@@ -29,3 +29,10 @@
         min-height: 35px;
     }
 }
+
+@include mobile {
+    .lr-applycta {
+        font-size: 14px;
+        background-size: contain;
+    }
+}
