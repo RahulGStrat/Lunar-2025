@@ -92,7 +92,7 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 7%;
+        padding-top: 10%;
       }
     
       .sc-step-by-step__head {
@@ -118,10 +118,20 @@
 
         .sc-step-by-step__title {
           font-size: 32px;
+          padding: 30px 20px 10px 20px;
+
         }
 
         .sc-step-by-step__title-sub {
           font-size: 18px;
+          padding: 0px 20px;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        .sc-step-by-step__title {
+          padding: 70px 20px 10px 20px;
+
         }
       }
     
@@ -274,13 +284,13 @@
       }
     
       .sc-step-by-step--dark-bg {
-        background: #BC2133 url('../assets/images/anbao-banner-desk.png') no-repeat center top;
+        background: #BC2133 url('https://av.sc.com/sg/content/images/anbao-banner-desk.png') no-repeat center top;
         background-size: contain;
       }
 
       @media (max-width: 680px) {
         .sc-step-by-step--dark-bg {
-        background: #BC2133 url('../assets/images/lny-angbao-banner-mob.png') no-repeat center top;
+        background: #BC2133 url('https://av.sc.com/sg/content/images/lny-angbao-banner-mob.png') no-repeat center top;
         background-size: contain;
       }
       }

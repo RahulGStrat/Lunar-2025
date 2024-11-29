@@ -17,3 +17,9 @@
         color: #FFB978;
     }
 }
+
+@include tablet {
+    .lr-applycta  {
+        min-height: 33px;
+    }
+}
