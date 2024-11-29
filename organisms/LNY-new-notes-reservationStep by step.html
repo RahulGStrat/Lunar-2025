@@ -92,6 +92,7 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column-reverse;
+        padding-top: 7%;
       }
     
       .sc-step-by-step__head {
@@ -100,14 +101,28 @@
       }
     
       .sc-step-by-step__title {
-        font-size: 1.5rem;
+        font-size: 48px;
         text-align: center;
         margin-bottom: 8px;
       }
     
       .sc-step-by-step__title-sub {
         color: #fff;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
     
+      }
+
+      @media (max-width: 680px) {
+
+        .sc-step-by-step__title {
+          font-size: 32px;
+        }
+
+        .sc-step-by-step__title-sub {
+          font-size: 18px;
+        }
       }
     
       .sc-step-by-step__desc {
@@ -259,8 +274,15 @@
       }
     
       .sc-step-by-step--dark-bg {
-        background: #A81E1D url('https://av.sc.com/sg/content/images/lny-footer-bg.png') no-repeat center bottom;
+        background: #BC2133 url('../assets/images/anbao-banner-desk.png') no-repeat center top;
         background-size: contain;
+      }
+
+      @media (max-width: 680px) {
+        .sc-step-by-step--dark-bg {
+        background: #BC2133 url('../assets/images/lny-angbao-banner-mob.png') no-repeat center top;
+        background-size: contain;
+      }
       }
     
       .sc-step-by-step--dark-bg .sc-heading-inner {
@@ -333,8 +355,8 @@
         }
     
         .sc-step-by-step__title {
-          font-size: 1.5rem;
-          text-align: left;
+          font-size: 48px;
+          text-align: center;
         }
     
         .sc-step-by-step__head {
@@ -1642,6 +1664,14 @@
     </style>
     <!-- tab-minimal module -->
     <div class="sc-step-by-step sc-step-by-step--dark-bg" id="sc-lb-module-steps">
+      <div class="sc-step-by-step__head">
+        <h2 class="sc-step-by-step__title">
+          Guidelines for sending eAngBaos
+        </h2>
+        <p class="sc-step-by-step__title-sub">
+          Step-by-step guide on sending eAngBaos:
+        </p>
+      </div>
       <div class="sc-content-wrapper">
         <div class="sc-step-by-step__left">
           <div class="splide sc-step-by-step__slider" id="splide19" role="region" aria-roledescription="carousel">
@@ -1748,15 +1778,6 @@
           </div>
         </div>
         <div class="sc-step-by-step__right">
-          <div class="sc-step-by-step__head">
-    
-            <h2 class="sc-step-by-step__title">
-              Guidelines for sending eAngBaos
-            </h2>
-            <p class="sc-step-by-step__title-sub">
-              Step-by-step guide on sending eAngBaos:
-            </p>
-          </div>
           <div class="splide sc-step-by-step__slider-content">
             <div class="splide__track">
               <div class="splide__list">
