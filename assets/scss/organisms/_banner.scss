@@ -2,6 +2,15 @@
     position: relative;
     height: 100%;
 
+    .content-wrapper {
+        width: 100%;
+        max-width: 1404px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     &__desk,
     &__mob {
         background-position: center;
@@ -35,6 +44,19 @@
         color: #fff;
         font-size: 24px;
         font-weight: 300;
+        width: 65%;
+
+        .bldlink{
+            font-weight: 500;
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
     }
 
     &__cta {

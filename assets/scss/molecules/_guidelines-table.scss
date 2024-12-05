@@ -28,6 +28,11 @@
         padding: 15px 15px 15px 15px;
         font-size: 14px;
         vertical-align: middle;
+
+        &.bld {
+            color: #000;
+            font-weight: 600;
+        }
     }
 
     &__greycell {
@@ -38,6 +43,11 @@
         padding: 15px 15px 15px 15px;
         font-size: 14px;
         vertical-align: middle;
+
+        &.bld {
+            color: #000;
+            font-weight: 500;
+        }
     }
 }
 

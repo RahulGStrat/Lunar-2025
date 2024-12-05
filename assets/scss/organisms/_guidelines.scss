@@ -97,6 +97,17 @@
         font-size: 18px;
         color: #000000;
         font-weight: 500;
+
+        a {
+            color: #2772C7;
+            text-decoration: underline;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: #2772C7;
+                text-decoration: unset;
+            }
+        }
     }
 
     &__contentb {
