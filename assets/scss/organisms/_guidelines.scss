@@ -34,7 +34,7 @@
         &--accd {
             padding: 0;
             flex-direction: column;
-            cursor: pointer;
+            cursor: default;
             .lr-guidelines__wrapa {
                 padding: 30px;
             }
@@ -123,7 +123,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-            transition: 0.3s;
+         transition: 0.3s;
+         cursor: pointer;
 
         svg {
             border: 2px solid #D9D9D9;
@@ -172,7 +173,19 @@
                 .lr-guidelines__wrapa {
                     padding: 0px;
                 }
+
+                .lr-guidelines__contentwrap {
+                    flex-direction: row;
+                }
+
+                .lr-guidelines__dwnarrow {
+                    width: 40px;
+                }
             }
+        }
+
+        &__contenta {
+            width: 93%;
         }
 
         &__crdcontent {

@@ -114,9 +114,14 @@
 @include mobile {
     .lr-banner {
         &__out {
-            padding: 40px 10px;
+            padding: 40px 0px;
             height: 310px;
             justify-content: flex-start;
+        }
+
+        .content-wrapper {
+            padding-left: 16px !important;
+            padding-right: 16px !important;
         }
 
         &__head {
@@ -125,6 +130,11 @@
 
         &__para {
             font-size: 16px;
+            width: 95%;
+
+            .bldlink {
+                font-size: 16px;
+            }
         }
 
         &__cta {

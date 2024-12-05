@@ -88,7 +88,7 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 10%;
+        padding-top: 6%;
       }
     
       .sc-step-by-step__head {
@@ -124,10 +124,19 @@
         }
       }
 
-      @media (max-width: 1023px) {
+      @media (min-width: 768px) and (max-width: 1023px) {
         .sc-step-by-step__title {
-          padding: 70px 20px 10px 20px;
+          padding: 0px 20px 10px 20px;
+        }
 
+        .sc-step-by-step__title-sub {
+          padding: 0px 25px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .sc-step-by-step__title {
+          padding: 0px 20px 10px 20px;
         }
       }
     
@@ -422,7 +431,7 @@
     
       @media (min-width: 680px) {
         .sc-step-by-step {
-          padding: 100px 0 250px;
+          padding: 100px 0 100px;
         }
     
         .sc-step-by-step__main-title {
@@ -1672,10 +1681,10 @@
     <div class="sc-step-by-step sc-step-by-step--dark-bg" id="sc-lb-module-steps">
       <div class="sc-step-by-step__head">
         <h2 class="sc-step-by-step__title">
-          Guidelines for sending eAngBaos
+          Guidelines for sending e-Angbaos
         </h2>
         <p class="sc-step-by-step__title-sub">
-          Step-by-step guide on sending eAngBaos:
+          Send e-Angbaos to your loved ones and wish them a prosperous year
         </p>
       </div>
       <div class="sc-content-wrapper">
