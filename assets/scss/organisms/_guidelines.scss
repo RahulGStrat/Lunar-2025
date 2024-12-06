@@ -179,18 +179,19 @@
                 }
 
                 .lr-guidelines__dwnarrow {
-                    width: 40px;
+                    width: 30px;
                 }
             }
         }
 
         &__contenta {
-            width: 93%;
+            width: 100%;
         }
 
         &__crdcontent {
             padding-top: 12px;
             padding-left: 0;
+            width: 90%;
         }
 
         &__subhead {
@@ -207,13 +208,20 @@
         }
 
         &__dwnarrow {
-            width: 25px;
+            width: 30px;
             margin-top: 10px;
         }
 
         &__contentwrap {
             flex-direction: column;
-            align-items: flex-end;
+        }
+
+        &__cardwrap {
+            padding: 5px 0px 0px 0px;
+        }
+        
+        &__outer {
+            padding: 10px 0px;
         }
     }
 }

@@ -39,6 +39,9 @@
 
 @include mobile {
     .lu-gdtop {
+
+        padding: 10px 0px;
+
         &__heading {
             font-weight: 500;
         }
