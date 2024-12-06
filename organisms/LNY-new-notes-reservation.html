@@ -1105,7 +1105,7 @@
         .lu-gdtop__para {
           color: #7D7F84;
           font-size: 15px;
-          padding-top: 20px;
+          padding-top: 0px;
           width: 100%;
           font-weight: 500;
         }
@@ -1852,6 +1852,11 @@
       .sc-persistent-bar{
         padding: 20px 0;
         background-color: #191919;
+
+        .sc-content-wrapper {
+          padding: 0px 72px 0px 32px;
+        }
+
       }
           .sc-btn {
           background-color: #2772C7;
@@ -1864,9 +1869,15 @@
           background-color: #fff;
           border: 1px solid #2772C7;
         }
+        @media (max-width: 767px) {
+          .sc-persistent-bar{
+                padding: 20px 0;
+                background-color: #191919;
 
-        .sc-content-wrapper {
-          padding: 0px 72px 0px 32px;
+                .sc-content-wrapper {
+                  padding: 0px 20px 0px 20px;
+                }
+          }
         }
      </style>
      <div
@@ -1890,7 +1901,7 @@
          <ul class="sc-inline-buttons">
            <li class="sc-inline-buttons__item">
              <a
-               href="#"
+               href="https://preview.standardchartered.com/sg/uat-apply/"
                title="Reserve Now"
                class="sc-btn sc-btn--medium"
              >
