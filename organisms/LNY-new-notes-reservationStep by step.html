@@ -299,10 +299,19 @@
       }
 
       @media (max-width: 680px) {
-        .sc-step-by-step--dark-bg {
-        background: #BC2133 url('https://av.sc.com/sg/content/images/lny-angbao-banner-mob.png') no-repeat center top;
-        background-size: contain;
-      }
+          .sc-step-by-step--dark-bg {
+          background: #BC2133 url('https://av.sc.com/sg/content/images/lny-angbao-banner-mob.png') no-repeat center top;
+          background-size: contain;
+        }
+
+        .sc-step-by-step__slider-imgout {
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        .splide__slide {
+          width: 100%;
+        }
       }
     
       .sc-step-by-step--dark-bg .sc-heading-inner {
@@ -341,7 +350,6 @@
     
       .sc-step-by-step--dark-bg .sc-step-by-step__slider .splide__slide.is-active {
         display: flex;
-        justify-content: flex-end;
       }
     
       .sc-step-by-step--dark-bg .sc-step-by-step__slider .splide__pagination__page.is-active {
@@ -435,7 +443,6 @@
         }
 
         .sc-step-by-step--dark-bg .sc-step-by-step__slider .splide__slide.is-active {
-        
           justify-content: flex-start;
         }
 
@@ -508,6 +515,14 @@
         .sc-step-by-step .splide__pagination {
           margin-top: 24px;
         }
+
+        .splide__slide {
+          width: 100%;
+        }
+
+        .sc-step-by-step__slider-imgout {
+          margin: 0 auto;
+        }
       }
     
       @media (max-width: 680px) {
@@ -516,7 +531,7 @@
         }
 
         .sc-step-by-step--dark-bg .sc-step-by-step__slider .splide__slide.is-active {
-        justify-content: center;
+          justify-content: center;
         }
       }
     
@@ -527,6 +542,10 @@
     
         .sc-step-by-step__right {
           margin-left: 24px;
+        }
+
+        .sc-step-by-step--dark-bg .sc-step-by-step__slider .splide__slide.is-active {
+          justify-content: center;
         }
       }
     </style>
