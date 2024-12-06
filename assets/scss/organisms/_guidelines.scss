@@ -146,6 +146,14 @@
 }
 
 
+@include tablet {
+    .lr-guidelines {
+        &__outer {
+            padding: 30px 0px;
+        }
+    }
+}
+
 @include mobile {
     .lr-guidelines {
 
