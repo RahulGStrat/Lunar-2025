@@ -100,7 +100,8 @@
       .sc-step-by-step__title {
         font-size: 48px;
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 25px;
+        margin-top: 0;
       }
     
       .sc-step-by-step__title-sub {
@@ -127,7 +128,7 @@
 
       @media (min-width: 768px) and (max-width: 1023px) {
         .sc-step-by-step__title {
-          padding: 0px 60px 10px 60px;
+          padding: 0px 77px 10px 77px;
         }
 
         .sc-step-by-step__title-sub {
@@ -443,14 +444,14 @@
         }
 
         .sc-step-by-step--dark-bg .sc-step-by-step__slider .splide__slide.is-active {
-          justify-content: flex-start;
+          justify-content: flex-end;
         }
 
       }
     
       @media (min-width: 680px) {
         .sc-step-by-step {
-          padding: 100px 0 50px;
+          padding: 90px 0 50px;
         }
     
         .sc-step-by-step__main-title {
@@ -1712,47 +1713,84 @@
           display: none !important;
         }
       }
+
+     .slide-aright {
+      display: flex;
+      justify-content: flex-end;
+     }
+
+     @media (min-width: 1024px) and (max-width: 1199px) {
+
+        .sc-step-by-step {
+          padding: 35px 0 50px;
+        }
+
+        .sc-step-by-step__title {
+          margin: 0px 145px 0px 145px;
+        }
+      }
+
+      .sc-step-by-step__step-num {
+        font-size: 16px;
+      }
+
+      .sc-step-by-step__desc {
+        font-size: 18px;
+      }
+
+      @media (max-width: 767px) {
+
+        .sc-step-by-step {
+        padding: 15px 0px;
+        }
+      }
+
+      .splide__slide .active {
+        justify-content: flex-end;
+      }
+     
+
     </style>
     <!-- tab-minimal module -->
     <div class="sc-step-by-step sc-step-by-step--dark-bg" id="sc-lb-module-steps">
       <div class="sc-step-by-step__head">
         <h2 class="sc-step-by-step__title">
-          Personalise your e-Angbao
+          Send Personalised e-Angbaos to your Loved Ones
         </h2>
-        <p class="sc-step-by-step__title-sub">
+        <!-- <p class="sc-step-by-step__title-sub">
           Send e-Angbaos to your loved ones and wish them a prosperous year
-        </p>
+        </p> -->
       </div>
       <div class="sc-content-wrapper">
         <div class="sc-step-by-step__left">
           <div class="splide sc-step-by-step__slider" id="splide19" role="region" aria-roledescription="carousel">
             <div class="splide__track">
               <ul class="splide__list" id="splide19-list" role="presentation">
-                <li class="splide__slide">
+                <li class="splide__slide slide-aright">
                   <div class="sc-step-by-step__slider-imgout">
                     <img src="https://av.sc.com/sg/content/images/lny-Step1-Desktop.png" class="sc-step-by-step__slider-img"
                     alt="" />
                   </div>
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide slide-aright">
                   <div class="sc-step-by-step__slider-imgout">
                     <img src="https://av.sc.com/sg/content/images/lny-Step2-Desktop.png" class="sc-step-by-step__slider-img"
                     alt="" />
                   </div>
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide slide-aright">
                   <div class="sc-step-by-step__slider-imgout">
                     <img src="https://av.sc.com/sg/content/images/lny-Step3-Desktop.png" class="sc-step-by-step__slider-img"
                     alt="" />
                   </div>
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide slide-aright">
                   <div class="sc-step-by-step__slider-imgout">
                     <img src="https://av.sc.com/sg/content/images/lny-Step4-Desktop.png" class="sc-step-by-step__slider-img"
                     alt="" />
                   </div>
                 </li>
-                <li class="splide__slide">
+                <li class="splide__slide slide-aright">
                   <div class="sc-step-by-step__slider-imgout">
                     <img src="https://av.sc.com/sg/content/images/lny-Step5-Desktop.png" class="sc-step-by-step__slider-img"
                     alt="" />
@@ -1854,7 +1892,7 @@
                   <p class="sc-step-by-step__step-num">Step 2</p>
                   <div class="sc-step-by-step__desc">
                     <p>
-                      <strong>Once login, click on the eAngBao icon.</strong>
+                      <strong>Once login, click on the eAngbao icon.</strong>
                     </p>
                   </div>
                 </div>
@@ -1862,7 +1900,7 @@
                   <p class="sc-step-by-step__step-num">Step 3</p>
                   <div class="sc-step-by-step__desc">
                     <p>
-                      <strong>After selecting the Payee, select send as ‘eAngBao’.</strong>
+                      <strong>After selecting the Payee, select send as ‘eAngbao’.</strong>
                     </p>
                   </div>
                 </div>
@@ -1870,7 +1908,7 @@
                   <p class="sc-step-by-step__step-num">Step 4</p>
                   <div class="sc-step-by-step__desc">
                     <p>
-                      <strong>Customise your eAngBao design and type a personalized message.</strong>
+                      <strong>Customise your eAngbao design and type a personalized message.</strong>
                     </p>
                   </div>
                 </div>
@@ -1878,7 +1916,7 @@
                   <p class="sc-step-by-step__step-num">Step 5</p>
                   <div class="sc-step-by-step__desc">
                     <p>
-                      <strong>Swipe to transfer and click on ‘Share’ to send your eAngBao to your love one.</strong>
+                      <strong>Swipe to transfer and click on ‘Share’ to send your eAngbao to your love one.</strong>
                     </p>
                   </div>
                 </div>
