@@ -124,7 +124,7 @@
 @include mobile {
     .lr-banner {
         &__out {
-            padding: 40px 0px;
+            padding: 20px 0px 40px 0px;
             height: 310px;
             justify-content: flex-start;
         }
@@ -136,6 +136,7 @@
 
         &__head {
             font-size: 30px;
+            line-height: 36px;
         }
 
         &__para {
@@ -149,7 +150,7 @@
 
         &__cta {
             margin-top: 15px;
-            width: 50%;
+            width: 35%;
         }
     }
 

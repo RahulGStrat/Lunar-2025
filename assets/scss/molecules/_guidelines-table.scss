@@ -4,6 +4,12 @@
 
     &__table {
         width: 100%;
+
+        &.txt-cntr {
+            .lr-guidelinestable__hdcell, .lr-guidelinestable__cell, .lr-guidelinestable__greycell {
+                text-align: center;
+            }
+        }
     }
 
     &__hdcell {
@@ -33,6 +39,10 @@
             color: #000;
             font-weight: 600;
         }
+
+        &.txt-cntr {
+            text-align: center;
+        }
     }
 
     &__greycell {
@@ -47,6 +57,10 @@
         &.bld {
             color: #000;
             font-weight: 500;
+        }
+
+        &.txt-cntr {
+            text-align: center;
         }
     }
 }
