@@ -101,11 +101,11 @@
 
         a {
             color: #2772C7;
-            text-decoration: underline;
+            // text-decoration: underline;
             transition: 0.3s ease-in-out;
 
             &:hover {
-                color: #2772C7;
+                color: #2261aa;
                 text-decoration: unset;
             }
         }
