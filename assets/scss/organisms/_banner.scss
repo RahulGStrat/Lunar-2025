@@ -30,6 +30,14 @@
         justify-content: center;
         height: 410px;
         padding: 32px 0;
+
+        &.phasea {
+            justify-content: flex-start;
+
+            .lr-banner__head {
+                line-height: 80px;
+            }
+        }
     }
 
     &__head {
