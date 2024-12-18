@@ -38,6 +38,18 @@
                 line-height: 80px;
             }
         }
+
+        &.cloneb {
+            justify-content: flex-start;
+
+            .lr-banner__head {
+                line-height: 80px;
+            }
+
+            .lr-banner__para {
+                width: 50%;
+            }
+        }
     }
 
     &__head {
@@ -102,6 +114,30 @@
     }
 }
 
+@include tablet-pro {
+    .lr-banner {
+        &__out {
+            &.clonea {
+    
+                .lr-banner__head {
+                    line-height: 80px;
+                }
+            }
+    
+            &.cloneb {
+    
+                .lr-banner__head {
+                    line-height: 80px;
+                }
+    
+                .lr-banner__para {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
 @include tablet {
     .lr-banner {
         &__desk {
@@ -120,6 +156,26 @@
             width: 20%;
             margin-top: 40px;
         }
+
+        &__out {
+            &.clonea {
+    
+                .lr-banner__head {
+                    line-height: 60px;
+                }
+            }
+    
+            &.cloneb {
+    
+                .lr-banner__head {
+                    line-height: 60px;
+                }
+    
+                .lr-banner__para {
+                    width: 60%;
+                }
+            }
+        }
     }
 
     .lr-bannerdwn {
@@ -135,6 +191,24 @@
             padding: 20px 0px 40px 0px;
             height: 310px;
             justify-content: flex-start;
+
+            &.clonea {
+    
+                .lr-banner__head {
+                    line-height: 38px;
+                }
+            }
+    
+            &.cloneb {
+    
+                .lr-banner__head {
+                    line-height: 38px;
+                }
+    
+                .lr-banner__para {
+                    width: 80%;
+                }
+            }
         }
 
         .content-wrapper {

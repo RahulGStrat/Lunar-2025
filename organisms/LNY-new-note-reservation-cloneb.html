@@ -357,6 +357,15 @@
         .lr-banner__out.clonea .lr-banner__head {
         line-height: 80px;
         }
+        .lr-banner__out.cloneb {
+        justify-content: flex-start;
+        }
+        .lr-banner__out.cloneb .lr-banner__head {
+        line-height: 80px;
+        }
+        .lr-banner__out.cloneb .lr-banner__para {
+        width: 50%;
+        }
         .lr-banner__head {
         font-size: 52px;
         font-weight: 400;
@@ -409,6 +418,17 @@
         padding: 13px 16px;
         }
 
+        @media (min-width: 1024px) and (max-width: 1199px) {
+        .lr-banner__out.clonea .lr-banner__head {
+            line-height: 80px;
+        }
+        .lr-banner__out.cloneb .lr-banner__head {
+            line-height: 80px;
+        }
+        .lr-banner__out.cloneb .lr-banner__para {
+            width: 60%;
+        }
+        }
         @media (min-width: 768px) and (max-width: 1023px) {
         .lr-banner__desk {
             background-position: 100%;
@@ -423,6 +443,15 @@
             width: 20%;
             margin-top: 40px;
         }
+        .lr-banner__out.clonea .lr-banner__head {
+            line-height: 60px;
+        }
+        .lr-banner__out.cloneb .lr-banner__head {
+            line-height: 60px;
+        }
+        .lr-banner__out.cloneb .lr-banner__para {
+            width: 60%;
+        }
         .lr-bannerdwn__cta2 {
             width: 20%;
         }
@@ -432,6 +461,15 @@
             padding: 20px 0px 40px 0px;
             height: 310px;
             justify-content: flex-start;
+        }
+        .lr-banner__out.clonea .lr-banner__head {
+            line-height: 38px;
+        }
+        .lr-banner__out.cloneb .lr-banner__head {
+            line-height: 38px;
+        }
+        .lr-banner__out.cloneb .lr-banner__para {
+            width: 80%;
         }
         .lr-banner .content-wrapper {
             padding-left: 16px !important;
@@ -485,6 +523,11 @@
         color: #fff;
         }
 
+        @media (max-width: 767px) {
+        .lr-heading {
+            font-size: 24px;
+        }
+        }
         .lr-guidelinestable {
         padding: 10px 70px 30px 70px;
         }
@@ -703,7 +746,7 @@
         }
         @media (max-width: 767px) {
         .lr-reserve__head {
-            font-size: 22px;
+            font-size: 24px;
         }
         .lr-reserve__copy {
             font-size: 16px;
@@ -835,6 +878,7 @@
         }
         .lr-guidelines__contenta a {
         color: #2772C7;
+        text-decoration: underline;
         transition: 0.3s ease-in-out;
         }
         .lr-guidelines__contenta a:hover {
@@ -1232,6 +1276,7 @@
         }
         .lr-guidelines__contenta a {
         color: #2772C7;
+        text-decoration: underline;
         transition: 0.3s ease-in-out;
         }
         .lr-guidelines__contenta a:hover {
@@ -1441,7 +1486,7 @@
         }
         @media (max-width: 767px) {
         .lr-reserve__head {
-            font-size: 22px;
+            font-size: 24px;
         }
         .lr-reserve__copy {
             font-size: 16px;
@@ -1554,7 +1599,7 @@
       <div style="background-image: url('https://av.sc.com/sg/content/images/lny-banner-desk-1.png');" class="lr-banner__desk desk-visible"></div>
       <div style="background-image: url('https://av.sc.com/sg/content/images/lny-banner-mob-1.png');" class="lr-banner__mob only-mobile"></div>
       <div class="content-wrapper">
-       <div class="lr-banner__out">
+       <div class="lr-banner__out cloneb">
           <div class="lr-banner__head">
             <h2>Lunar New Year 2025 <br>Standard Chartered Singapore</h2>
           </div>
@@ -1564,9 +1609,9 @@
           <!-- <div class="lr-banner__para">
             <p>T&Cs apply.</p>
           </div> -->
-          <div class="lr-banner__cta">
+          <!-- <div class="lr-banner__cta">
             <a href="https://preview.standardchartered.com/sg/lny-new-notes-reservation/reserve/" target="_blank" class="lr-applycta" style="background-image: url('https://av.sc.com/sg/content/images/lny-cta.png');">Reserve Now</a>
-          </div>
+          </div> -->
        </div>
       </div>
      </div>
@@ -1605,7 +1650,7 @@
           <div class="lu-gdtop__para">
             <p>Clients aged 60 and above or clients who require special assistance can visit our branches for new banknotes exchange without prior reservation from 14 January to 28 January 2025 (subject to Branch operating hours).</p>
           </div>
-          <p class="lu-gdtop__downpara">Please present your NRIC or Passport for identification for new notes collection.</p>
+          <p class="lu-gdtop__downpara">*Please present your NRIC or Passport for identification for the new notes collection.</p>
         </div>
       </div>
      </div>

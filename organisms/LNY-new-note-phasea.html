@@ -7,7 +7,7 @@
     <!-- styles -->
 	  <!--<link rel="stylesheet" href="https://av.sc.com/sg/lny-new-notes-reservation/style.css">-->
     <!-- styles -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/style.css" /> -->
     <title>Document</title>
   </head>
   <body>
@@ -351,6 +351,21 @@
         height: 410px;
         padding: 32px 0;
       }
+      .lr-banner__out.clonea {
+        justify-content: flex-start;
+      }
+      .lr-banner__out.clonea .lr-banner__head {
+        line-height: 80px;
+      }
+      .lr-banner__out.cloneb {
+        justify-content: flex-start;
+      }
+      .lr-banner__out.cloneb .lr-banner__head {
+        line-height: 80px;
+      }
+      .lr-banner__out.cloneb .lr-banner__para {
+        width: 50%;
+      }
       .lr-banner__head {
         font-size: 52px;
         font-weight: 400;
@@ -403,6 +418,17 @@
         padding: 13px 16px;
       }
 
+      @media (min-width: 1024px) and (max-width: 1199px) {
+        .lr-banner__out.clonea .lr-banner__head {
+          line-height: 80px;
+        }
+        .lr-banner__out.cloneb .lr-banner__head {
+          line-height: 80px;
+        }
+        .lr-banner__out.cloneb .lr-banner__para {
+          width: 60%;
+        }
+      }
       @media (min-width: 768px) and (max-width: 1023px) {
         .lr-banner__desk {
           background-position: 100%;
@@ -417,6 +443,15 @@
           width: 20%;
           margin-top: 40px;
         }
+        .lr-banner__out.clonea .lr-banner__head {
+          line-height: 60px;
+        }
+        .lr-banner__out.cloneb .lr-banner__head {
+          line-height: 60px;
+        }
+        .lr-banner__out.cloneb .lr-banner__para {
+          width: 60%;
+        }
         .lr-bannerdwn__cta2 {
           width: 20%;
         }
@@ -427,12 +462,21 @@
           height: 310px;
           justify-content: flex-start;
         }
+        .lr-banner__out.clonea .lr-banner__head {
+          line-height: 38px;
+        }
+        .lr-banner__out.cloneb .lr-banner__head {
+          line-height: 38px;
+        }
+        .lr-banner__out.cloneb .lr-banner__para {
+          width: 80%;
+        }
         .lr-banner .content-wrapper {
           padding-left: 16px !important;
           padding-right: 16px !important;
         }
         .lr-banner__head {
-          font-size: 30px;
+          font-size: 28px;
           line-height: 36px;
           padding-top: 20px;
         }
@@ -479,6 +523,11 @@
         color: #fff;
       }
 
+      @media (max-width: 767px) {
+        .lr-heading {
+          font-size: 24px;
+        }
+      }
       .lr-guidelinestable {
         padding: 10px 70px 30px 70px;
       }
@@ -579,6 +628,7 @@
       }
       .lr-guidelineslist__content.blutxt {
         color: #2772C7;
+        padding-top: 20px;
       }
 
       @media (max-width: 767px) {
@@ -696,7 +746,7 @@
       }
       @media (max-width: 767px) {
         .lr-reserve__head {
-          font-size: 22px;
+          font-size: 24px;
         }
         .lr-reserve__copy {
           font-size: 16px;
@@ -832,7 +882,7 @@
         transition: 0.3s ease-in-out;
       }
       .lr-guidelines__contenta a:hover {
-        color: #2772C7;
+        color: #2261aa;
         text-decoration: unset;
       }
       .lr-guidelines__contentb {
@@ -1098,13 +1148,13 @@
       }
       .lu-gdtop__para {
         color: #262626;
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 36px;
-        width: 80%;
+        width: 90%;
         font-weight: 500;
       }
       .lu-gdtop__downpara {
@@ -1230,7 +1280,7 @@
         transition: 0.3s ease-in-out;
       }
       .lr-guidelines__contenta a:hover {
-        color: #2772C7;
+        color: #2261aa;
         text-decoration: unset;
       }
       .lr-guidelines__contentb {
@@ -1436,7 +1486,7 @@
       }
       @media (max-width: 767px) {
         .lr-reserve__head {
-          font-size: 22px;
+          font-size: 24px;
         }
         .lr-reserve__copy {
           font-size: 16px;
@@ -1883,7 +1933,7 @@
      </div>
 
      <!-- Guidelines-New -->
-     <!-- <div class="lu-gdtop">
+     <div class="lu-gdtop">
       <div class="content-wrapper">
         <div class="lu-gdtop__out">
           <div class="lu-gdtop__heading">
@@ -1892,10 +1942,10 @@
           <div class="lu-gdtop__para">
             <p>Clients aged 60 and above or clients who require special assistance can visit our branches for new banknotes exchange without prior reservation from 14 January to 28 January 2025 (subject to Branch operating hours).</p>
           </div>
-          <p class="lu-gdtop__downpara">Please present your NRIC or Passport for identification for new notes collection.</p>
+          <p class="lu-gdtop__downpara">*Please present your NRIC or Passport for identification for the new notes collection.</p>
         </div>
       </div>
-     </div> -->
+     </div>
      <link rel="stylesheet" id="sc-nitro-persistent-bar-new-style-css" href="https://av.sc.com/assets/global/css/nitro/sc-persistent-bar.min.css?ver=3e4de1b" media="all">
      <script defer="defer" src='https://av.sc.com/assets/global/js/nitro/sc-persistent-bar.min.js' id='sc-nitro-persistent-bar-new-script-js'></script>
      <style>
