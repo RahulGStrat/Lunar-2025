@@ -118,6 +118,14 @@
         padding-top: 15px;
     }
 
+    &__contentimg {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
     &__dwnarrow {
         width: 30px;
         height: 30px;
@@ -146,11 +154,23 @@
     }
 }
 
+@include tablet-pro {
+    .lr-guidelines {
+        &__contentimg {
+            width: 65%;
+        }
+    }
+}
+
 
 @include tablet {
     .lr-guidelines {
         &__outer {
             padding: 30px 0px;
+        }
+
+        &__contentimg {
+            width: 75%;
         }
     }
 }
@@ -232,6 +252,10 @@
         
         &__outer {
             padding: 10px 0px;
+        }
+
+        &__contentimg {
+            width: 100%;
         }
     }
 }
