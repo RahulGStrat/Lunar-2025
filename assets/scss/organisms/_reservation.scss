@@ -12,6 +12,16 @@
       margin: 20px 0px 65px;
    }
 
+   &__copyb {
+      font-size: 20px;
+      text-align: center;
+      margin: 20px 0px 30px;
+
+      &.top-mnone {
+         margin: 0px 0px 65px;
+      }
+   }
+
    &__left,
    &__right {
       width: 110px;
