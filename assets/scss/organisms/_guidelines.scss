@@ -48,6 +48,12 @@
         &.align-top {
             align-items: start;
         }
+
+        &.acc-none {
+            .lr-guidelineslist {
+                padding: 30px 0px 30px 0px;
+            }
+        }
     }
 
     &__cardindex {
