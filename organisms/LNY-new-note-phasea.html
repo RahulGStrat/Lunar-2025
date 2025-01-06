@@ -2052,12 +2052,16 @@
           color: #fff;
           border: 1px solid #2772C7;
           font-weight: 500;
+          padding: 8px 30px;
+          border-radius: 25px;
+          transition: 0.3s ease-in-out;
         }
         .sc-btn-lny:hover {
           color: #2772C7;
           background-color: #fff;
           border: 1px solid #2772C7;
         }
+
         @media (max-width: 767px) {
           .sc-persistent-bar{
                 padding: 20px 0;
@@ -2068,8 +2072,17 @@
                 }
           }
 
+          .sc-persistent-bar__main-content {
+            padding-bottom: 10px;
+          }
+
           .sc-inline-buttons__item {
             margin: 0 8px 0px 0;
+          }
+
+          .sc-btn-lny {
+            font-size: 14px;
+            padding: 6px 25px;
           }
         }
      </style>
